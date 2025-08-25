@@ -23,6 +23,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    height: 100px;
     background: #00357a;
     color: #fff;
     display: flex;
@@ -142,11 +143,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
 }
 
 .tab1, .tab2, .tab3 {
-    width: 350px;
+    width: 400px;
     height: 400px;
     display: flex;
     flex-direction: column;
@@ -321,17 +322,17 @@ body {
     }
 
     main {
-        padding-top: 20%;
+        padding-top: 13%;
     }
 
     .hero {
         width: 100%;
-        height: 80%;
+        height: 60vh;
     }
 
     .hero-text h1 {
-        font-size: 2.7rem;
-        text-align: left;
+        font-size: 2rem;
+        text-align: center;
     }
 
     .hero-text p {
@@ -353,9 +354,8 @@ body {
         color: #ffffff;
     }
 
- .tabs {
+    .tabs {
         display: flex;
-        padding: 20px;
     }
 
     .boxes {
@@ -405,9 +405,9 @@ body {
         border: none; 
     }
 
-    .bannerImage img {
+    .bannerImage img{
         height: auto;
-        max-width: 100%;
+        width: 300px;
     }
 
     .banner-text {
@@ -560,6 +560,7 @@ body {
 
     .boxes {
         width: 100%;
+        height: auto;
     }
 
     .tab1, .tab2, .tab3 {
@@ -593,7 +594,7 @@ body {
     }
 
     .banner h1 {
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: #ffffff;
         line-height: 1;
     }
@@ -603,7 +604,8 @@ body {
     }
 
     .banner a {
-        width: 70%;
+        text-align: center;
+        width: 65%;
     }
 
     .banner-text a:hover {
@@ -612,7 +614,7 @@ body {
         transform: scale(1.05);
     }
 
-    .bannerImage {
+    .bannerImage img {
         width: 185px;
         height: auto;
     }
@@ -630,7 +632,7 @@ body {
         padding: 20px;
     }
 
-     .info1, .info3 {
+    .info1, .info3 {
         display: flex;
         justify-content: space-between;
         align-items: center;
