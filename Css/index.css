@@ -212,7 +212,7 @@ body {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding-left: 40px;
+    padding-left: 30px;
     width: 100%;
     height: auto;
     background-color: #00357a;
@@ -237,6 +237,7 @@ body {
 
 .banner p {
     font-size: 2rem;
+    font-family: "Kaisei HarunoUmi", sans-serif;
 }
 
 .banner a {
@@ -257,9 +258,6 @@ body {
 
 .info {
     margin-top: 20px;
-    text-align: center;
-    font-size: 2rem;
-    color: #cc4e00;
 }
 
 .content {
@@ -291,12 +289,19 @@ body {
 }
 
 .info1 img, .info2 img, .info3 img, .info4 img {
-     width: 150px;
-     height: 150px;
+    width: 150px;
+    height: 150px;
+}
+
+.info h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #cc4e00;
+    font-family: "Kaisei HarunoUmi", sans-serif;
 }
 
 .info1 p, .info2 p, .info3 p, .info4 p {
-     color: #000000;
+    color: #000000;
     font-size: 1rem;
 }
 
@@ -560,7 +565,7 @@ body {
 
     .boxes {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
 
     .tab1, .tab2, .tab3 {

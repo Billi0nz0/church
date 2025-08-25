@@ -1,23 +1,166 @@
-body, html {
+body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    overflow: hidden;
+    box-sizing: border-box;
 }
 
-/* Background container */
-.background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 110%;   /* slightly bigger so movement won’t expose gaps */
-    height: 110%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: background-image 1s ease-in-out;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6.5%;
+}
 
-    /* Mobile-friendly GPU acceleration */
-    will-change: transform, opacity;
-    transform: translateZ(0)
+.intro {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #cc4e00e7;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    gap: 30px;
+}
+
+.intro h1 {
+    text-align: left;
+    color: #ffffff;
+    font-size: 2.3rem;
+    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-weight: 300;
+}
+
+
+.history h1, .mission h1 {
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    font-size: 2.5rem;
+    color: #cc4e00;
+    font-family: "Kaisei HarunoUmi", sans-serif;
+}
+
+.history p, .mission p {
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.aboutImg img {
+    width: 400px;
+    height: auto;
+    border-radius: 25px;
+}
+
+p, h1 {
+    color: black;
+}
+
+.leaders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 20px;
+}
+
+.leaders h1 {
+    font-size: 2.5rem;
+    color: #cc4e00;
+    text-align: left;
+    font-family: "Kaisei HarunoUmi", sans-serif;
+}
+
+.leaders p {
+    font-size: 1.3rem;
+    text-align: justify;
+}
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: 100%;
+}
+
+.slides img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: #cc4e00;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.btn.prev {
+    left: 10px;
+}
+
+.btn.next {
+    right: 10px;
+}
+
+@media (max-width: 1030px) {
+    main {
+        padding-top: 18%;
+    }
+
+    .intro h1 {
+        font-size: 1.3rem;
+        text-align: right;
+    }
+
+    .aboutImg img {
+        max-width: 500px;
+        width: 80%;
+        height: auto;
+    }
+
+    .history h1, .mission h1, .leaders h1 {
+        font-size: 2rem;
+    }
+
+    .history p, .mission p, .leaders p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding-top: 24.2%;
+    }
+
+    .intro h1 {
+        font-size: 1rem;
+        text-align: right;
+    }
+
+    .aboutImg img {
+        width: 200px;
+        height: auto;
+    }
 }

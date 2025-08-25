@@ -16,64 +16,65 @@
             <a href="#" target="self"> Give </a>
             <a id="CTO" href="#" target="self"> Get In Touch</a>
         </nav>
-    </header>
-
-    <section class="about">
-        <div class="introductory">
-            <h1 class="about-title">  About Us | Global Champions Ministries</h1>
-            <P class="mission">
-                Global Champions Ministries is a faith-based movement dedicated to raising champions for Christ. 
-                Our mission is to empower individuals to live victorious lives, grow in faith, and impact their world with love and integrity.
-
-                We believe every person has a God-given destiny, and through worship, teaching, mentorship, and outreach, 
-                we equip believers to walk in purpose and transform communities.
-
-                At Global Champions Ministries, we are more than a church—we are a family of champions, united in hope, 
-                committed to service, and passionate about changing the world for Christ.
-            </P>
-        </div>
-
-        
-        <h1 class="lead">Our Leadership</h1>
-        <div class="Images">
-            <div class="background"></div>
-        </div>
-                
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
             <i class="fas fa-bars"></i>
-        </a>  
+        </a>
     </header>
 
+    <main class="about">
+        <section class="intro">
+            <h1>  About Us | <br> Global Champions Ministries</h1>
+
+            <div class="aboutImg">
+                <img src="Images/Apostle.jpeg" alt="church">
+            </div>
+        </section>
+
+        <div class="history">
+            <h1> Our History </h1>
+            <p>
+                Global Champions Ministries was founded in May 2015 by Apostle Ifeanyi Ugochi with a divine mandate to raise champions for 
+                Christ and impact lives through the power of the gospel. Since its inception, the ministry has been committed to spreading 
+                the message of faith, hope, and transformation across communities. What began as a vision has grown into a vibrant fellowship 
+                where believers are equipped, empowered, and inspired to fulfill their God-given destinies.
+            </p>
+        </div>
+        
+        <div class="mission">
+            <h1> Our Mission </h1>
+
+            <P>
+                Global Champions Ministries is a faith-based movement dedicated to raising champions for Christ.
+                Our mission is to empower individuals to live victorious lives, grow in faith, and impact their world with love and integrity.
+                We believe every person has a God-given destiny, and through worship, teaching, mentorship, and outreach,
+                we equip believers to walk in purpose and transform communities. At Global
+                Champions Ministries, we are more than a church—we are a family of champions,
+                united in hope, committed to service, and passionate about changing the world for Christ.
+            </P>
+        </div>
+        
+
+        <section class="leaders">
+            <h1 class="leadtitle">Meet Our Leaders</h1>
+            <p> At Global Champions Ministries, we are blessed with dedicated leaders who serve with vision, integrity, and compassion. 
+                Each leader is committed to guiding others in faith, empowering lives, and building a community centered on Christ’s love.
+            </p>
+            
+            <div class="slider">
+                <div class="slides" id="slides">
+                    <img src="Images/Apostle.jpeg" alt="">
+                    <img src="Images/papa.jpeg" alt="">
+                </div>
+                <button class="btn prev" onclick="moveSlide(-1)">❮</button>
+                <button class="btn next" onclick="moveSlide(1)">❯</button>
+            </div>
+        </section>       
+            
 
 
 
 
 
-   
 
 
 
@@ -88,8 +89,15 @@
 
 
 
+
+
+
+
+        </section>   
+    </main>
     <footer id="footer"></footer>
-    <script src="JavaScript/footer.js"></script>
     <script src="JavaScript/nav.js"></script>
+    <script src="JavaScript/aboutusslider.js"></script>
+    <script src="JavaScript/footer.js"></script>
 </body>
 </html>
