@@ -229,7 +229,7 @@ form input:focus, form textarea:focus {
 
 .c1 p, .c2 p, .c3 p {
     font-size: 1.3rem;
-    color: #cc4e00;
+    color: #ffffff;
     font-weight: 500;
     font-family: "Kaisei HarunoUmi", sans-serif;
 }
@@ -277,7 +277,7 @@ i:hover {
     }
 
     form {
-        width: 60%;
+        width: 70%;
         margin-left: 0 auto;
 
     }
@@ -298,8 +298,12 @@ i:hover {
     
 
 @media (max-width: 768px) {
+    main{
+        padding-top: 10%;
+    }
+    
     form {
-        width: 95%;
+        width: 100%;
         padding: 20px;
         margin: 0 auto;
     }
@@ -308,13 +312,17 @@ i:hover {
         font-size: 2.5rem;
     }
 
-    input[type="text"], input[type="email"], textarea {
+    input[type="text"], input[type="email"] {
         font-size: 1rem;
+        width: 80%;
+    }
+
+    textarea {
         width: 100%;
     }
 
     form button {
-        width: 100%;
+        width: 50%;
     }
 }
 
@@ -364,9 +372,13 @@ i:hover {
     }
 
     form {
-        width: 90%;
+        width: 95%;
         padding: 20px;
         margin-right: 0 auto;
+    }
+
+    .head {
+        font-size: 1.2rem;
     }
 
     input[type="text"], 
@@ -384,6 +396,10 @@ i:hover {
     
     .others {
         width: 85%;
+    }
+
+    .c1 p, .c2 p, .c3 p {
+        font-size: 0.9rem;
     }
 }
 

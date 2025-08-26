@@ -153,6 +153,7 @@ body {
 .tabs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    min-width: 250px;
     margin-top: 10%;
     place-content: center;
     padding: 30px;
@@ -385,7 +386,7 @@ body {
     .boxes {
         display: flex;
         flex-direction: column;
-        width: 60%;
+        width: 95%;
         height: auto;
         align-items: center;
         justify-content: center;
@@ -584,17 +585,16 @@ body {
 
     .boxes {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     .tab1, .tab2, .tab3 {
-        width: 50%;
-        height: auto;
+        width: 90%;
     }
 
     .tab1 img, .tab2 img, .tab3 img {
         width: 50%;
-        height: fit-content;
+        height: auto;
     }
 
     .tab1 h1, .tab2 h1, .tab3 h1 {

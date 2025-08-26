@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-top: 0;
+    gap: 20px;
+    font-family: "poppins", sans-serif;
+}
+
+.main-header {
+    width: 100%;
+    height: 500px;
+    background: url("/Images/hero.svg") no-repeat center center/cover;
+    opacity: 90%;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 5%;
+    gap: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+.donatetxt h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #cc4e00;
+    font-family: "Kaisei HarunoUmi", sans-serif;
+}
+
+.donatetxt p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+.logo img {
+    width: 120px;
+    height: auto;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navLinks a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 550;
+    transition: color 0.3s ease-in-out;
+}
+
+.navLinks a:hover {
+    color: #cc4e00;
+    transform: scale(1.05);
+}
+
+#CTO {
+    display: flex;
+    padding: 10px 15px;
+    background: #cc4e00;
+    border-radius: 5px;
+}
+
+#CTO:hover {
+    background: #ffffff;
+}
+
+.icon {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+    .main-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .donatetxt h1 {
+        text-align: center;
+        font-size: 1rem;
+        color: #cc4e00;
+        font-family: "Kaisei HarunoUmi", sans-serif;
+    }
+
+    .donatetxt p {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #ffffff;
+    }
+
+    .logo img{
+        width: 100px;
+        height: auto;
+    }
+
+    .navLinks.show {
+        display: flex;
+    }
+
+    .icon {
+        display: block; /* Show hamburger */
+        color: #cc4e00;
+        z-index: 1000;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        background: #fcfcfce8;
+        position: absolute;
+        top: 419px;
+        right: 150px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        z-index: 1000;
+    }
+
+    .navLinks a {
+        color: #cc4e00;
+        padding: 8px 0;
+        font-size: 0.8rem;
+        text-decoration: none
+    }
+    
+    #CTO {
+        width: 100%;
+        color: #ffffff;
+    }
+
+    main {
+        padding-top: 20%;
+    }
+
+    .image img {
+        width: 200px;
+        height: auto;
+    }
+
+    
+}
