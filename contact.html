@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <a href="index.html" class="logo">
+                <img src="Images/logo.svg" alt="Global Champions Ministries Logo">
+            </a>
+        </div>
+
+
+        <nav id="myLinks" class="navLinks">
+            <a href="about.html" target="self"> About</a>
+            <a href="#" target="self"> Events </a>
+            <a href="#" target="self"> Give </a>
+            <a id="CTO" href="#" target="self"> Get In Touch</a>
+        </nav>
+
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </a>  
+    </header>
+
+    <main>
+        <div id="form">
+            <div class="formImg">
+                <h2 class="contact-title">Contact Us</h2>
+                <img src="Images/ICONS/contacticon.svg" alt="contact">
+            </div>
+
+
+            <div>
+                <form class="content" id="contact-form" method="POST">
+                    <h1 class="head">
+                        Share your prayer requests or give us feedback
+                        we’re here to listen and pray with you.
+                    </h1>
+
+                    <label for="name">Full Name:</label><br>
+                    <input type="text" id="name" name="name" required><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" required></textarea><br><br>
+
+                    <button type="submit">Send Message</button>
+                    <div id="form-status"></div>
+                </form>
+            </div>
+        </div>   
+
+        <div class="contact-us">
+            <h1 class="others-title"> You can also contact us through</h1>
+            <div class="others"> 
+                <div class="c1">
+                    <p> Social Media</p>
+                    <div>
+                        <img src="Images/ICONS/social media icon .svg" alt="social media icons">
+                    </div>
+                    <div class="links">
+                        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://youtube.com/yourpage" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    
+                </div>
+
+                <div class="c2">
+                    <p> Mail </p>
+                    <div>
+                        <img src="Images/ICONS/MAIL ICONICON.png" alt="mail-icon">
+                    </div>
+                    <a href="mailto:yourname@email.com"><i class="fas fa-envelope"></i> contact@gcm.com </a>
+                </div>
+
+                <div class="c3">
+                    <p> Or walk into any of our branches <br> at the following locations </p>
+                    <div>
+                        <img src="Images/ICONS/LOCATION ICON.png" alt="location icon">
+                    </div>
+                    <a href="https://www.google.com/maps/place/7+Osinaike+Oluwawemimo+St,+Ilasamaja,+Lagos+102214,+Lagos/@6.4968659,3.3088329,17z/data=!4m6!3m5!1s0x103b8ec4ca8752b7:0x92b9bc0377ac403e!8m2!3d6.4968659!4d3.3088329!16s%2Fg%2F11h15_bbsj?utm_campaign=ml-sbr&g_ep=Eg1tbF8yMDI1MDgyMF8wIOC7DCoASAJQAg%3D%3D" target="_blank">
+                    <i class="fas fa-map-marker-alt"></i> <b>7 Osinaike Oluwawemimo <br> 
+                    Cresent, by Cement</b> Bus Stop,<br> Ago Palace Way, Okota, Lagos. </a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <script src="JavaScript/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="JavaScript/contactform.js"></script>
+    <script src="JavaScript/footer.js"></script>
+</body>
+</html>
