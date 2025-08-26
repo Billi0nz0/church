@@ -96,6 +96,10 @@ main{
     background: #ffffff;
 }
 
+.donatetxt h1 {
+    font-size: 1.5rem;
+}
+
 .icon {
     display: none;
     font-size: 26px;
@@ -248,20 +252,20 @@ hr{
     }
 
     .cash img, .bank img {
-        width: 100px;
+        width: 90px;
         height: auto;
     }
 
     .cash h1, .bank h1 {
-        font-style: 0.8rem;
+        font-size: 1.3rem;
         text-align: left;
         font-family: "Kaisei HarunoUmi", sans-serif;
     }
 
     .cash p, .bank p {
         text-align: left;
-        color:black;
-        font-size: 0.8rem;
+        color: #000;
+        font-size: 0.9rem;
     }
 
     #end {
