@@ -150,6 +150,26 @@ body {
     transform: scale(1.07);
 }
 
+.icon {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: #ffffff;
+    z-index: 1100;
+}
+.icon i {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.icon i:hover {
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
 .tabs {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
