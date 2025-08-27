@@ -275,7 +275,7 @@ hr {
     border: none;
     border-radius: 10px;
     width: 50%;
-    height: auto;
+   
     background-color: #00357a;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
     gap: 20px;
@@ -289,7 +289,7 @@ hr {
     text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     .titletxt h1 {
         font-size: 2.5rem;
