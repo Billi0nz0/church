@@ -130,7 +130,7 @@ main{
     gap: 20px;
 }
 
-.w1, .w2 {
+.w1, .w2, .w3 {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,12 +145,12 @@ main{
     gap: 20px;
 }
 
-.w1 img, .w2 img {
+.w1 img, .w2 img, .w3 img {
     width: 350px;
     height: auto;
 }
 
-.w1 h2, .w2 h2 {
+.w1 h2, .w2 h2, .w3 h2 {
     font-size: 2rem;
     text-align: left;
     color: #ffffff;
@@ -159,14 +159,14 @@ main{
     font-style: italic;
 }
 
-.w1 p, .w2 p {
+.w1 p, .w2 p, .w3 p {
     font-size: 1.3rem;
     text-align: left;
     color: #ffffff;
     line-height: 1.5;
 }
 
-.w1 a, .w2 a {
+.w1 a, .w2 a, .w3 a {
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
@@ -304,18 +304,18 @@ hr {
         padding: 10px;
     }
 
-    .w1, .w2 {
+    .w1, .w2, .w3 {
         flex-direction: column;
         width: 100%;
     }
 
-    .w1 img, .w2 img {
+    .w1 img, .w2 img, .w3 img {
         width: 100%;
         height: auto;
         margin-bottom: 15px;
     }
 
-    .w1 a, .w2 a {
+    .w1 a, .w2 a, .w3 a {
         width: 50%;
         font-size: 1rem;
     }
@@ -393,31 +393,26 @@ hr {
         font-size: 0.8rem;
     }
 
-    .w1 a, w2 a {
-        width: 50%;
-        font-size: 0.8rem;
-    }
-
-    .w1, .w2 {
+    .w1, .w2, .w3 {
         padding: 20px;
         width: 100%;
     }
 
-    .w1 img, .w2 img {
+    .w1 img, .w2 img, .w3 img {
         width: 100%;
         height: auto;
         margin-bottom: 15px;
     }
 
-    .w1 h2, .w2 h2 {
+    .w1 h2, .w2 h2, .w3 h2 {
         font-size: 1rem;
     }
 
-    .w1 p, .w2 p {
+    .w1 p, .w2 p, .w3 p {
         font-size: 0.8rem;
     }
 
-    .w1 a, .w2 a {
+    .w1 a, .w2 a, .w3 a {
         width: 50%;
         font-size: 0.8rem;
     }

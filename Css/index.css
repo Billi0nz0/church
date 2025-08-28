@@ -3,37 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "poppins", sans-serif;
-    visibility: visible;
 }
-
-/* Preloader styles */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: #ffffff; /* background while loading */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-/* Logo animation */
-.loader-logo {
-  width: 120px;  
-  height: auto;
-  animation: pulse 1.5s infinite;
-}
-
-/* Simple pulsing animation */
-@keyframes pulse {
-  0% { transform: scale(1); opacity: 1; }
-  50% { transform: scale(1.1); opacity: 0.8; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
 
 body {
     display: flex;
@@ -95,9 +65,24 @@ body {
 }
 
 .icon {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+    z-index: 1100;
+    color: #ffffff;
+}
+
+.icon i {
+    font-size: 24px;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0 8px;
+    transition: color 0.3s ease;
+}
+
+.icon i:hover {
+    color: #ffffff;
+    transform: scale(1.05);
 }
 
 .hero {
@@ -125,6 +110,7 @@ body {
 .hero-text p {
     font-size: 2rem;
     text-align: center;
+    color: #ffffff;
 }
 
 .CTO {
@@ -151,12 +137,13 @@ body {
 }
 
 .icon {
-    display: block;
+    display: none;
     font-size: 26px;
     cursor: pointer;
     color: #ffffff;
     z-index: 1100;
 }
+
 .icon i {
     font-size: 24px;
     text-decoration: none;
@@ -228,6 +215,7 @@ body {
 .tab1 p, .tab2 p, .tab3 p {
     font-size: 0.9rem;
     text-align: center;
+    color: #ffffff;
 } 
 
 .tab1 a, .tab2 a, .tab3 a {
@@ -273,16 +261,17 @@ body {
 .banner h1 {
     font-size: 5rem;
     color: #ffffff;
+    font-family: "Kaisei HarunoUmi", sans-serif;
     line-height: 1.2;
 }
 
 .banner p {
     font-size: 2rem;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    color: #ffffff
 }
 
 .banner a {
-    padding: 13px;
+    padding: 10px 15px;
     background: #ffffff ;
     color: #00357a;
     text-decoration: none;
@@ -348,206 +337,9 @@ body {
 
 
 
-@media (max-width: 920px) {
-    header {
-        display: flex;
-        justify-content: center;
-        padding: 0;
-        width: 100%;
-        height: auto;
-    }
-
-    .logo img {
-        height: auto;
-        width: 90px;
-    }
-
-    .navLinks a {
-        font-size: 0.8rem;
-    }
-
-    main {
-        padding-top: 13%;
-    }
-
-    .hero {
-        width: 100%;
-        height: 60vh;
-    }
-
-    .hero-text h1 {
-        font-size: 2rem;
-        text-align: center;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    #CTO2 {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    #CTO2 a {
-        padding: 10px;
-        background: #cc4e00;
-        border-radius: 5px;
-        text-decoration: none;
-        font-size: 0.8rem;
-        color: #ffffff;
-    }
-
-    .tabs {
-        display: flex;
-    }
-
-    .boxes {
-        display: flex;
-        flex-direction: column;
-        width: 95%;
-        height: auto;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tab1, .tab2, .tab3 {
-        width: 100%;
-        height: auto;
-    }
-
-    .tab1 img, .tab2 img, .tab3 img {
-        width: 50%;
-        height: fit-content;
-    }
-
-    .tab1 h1, .tab2 h1, .tab3 h1 {
-        font-size: 1.5rem;
-    }
-
-    .tab1 p, .tab2 p, .tab3 p {
-        font-size: 0.9rem;
-    }
-
-    .tab1 a, .tab2 a, .tab3 a {
-        font-size: 0.8rem;
-        font-weight: 600;
-    }
-
-    .banner {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        padding-left: 40px;
-        max-width: 100%;
-        height: auto;
-        background-color: #00357a;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        margin-top: 50px;
-        border: none; 
-    }
-
-    .bannerImage img{
-        height: auto;
-        width: 300px;
-    }
-
-    .banner-text {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .banner h1 {
-        font-size: 2rem;
-        color: #ffffff;
-        line-height: 1.2;
-    }
-
-    .banner p {
-        font-size: 1rem;
-    }
-
-    .banner a {
-        padding: 10px;
-        background: #ffffff ;
-        color: #00357a;
-        text-decoration: none;
-        border-radius: 5px;
-        font-size: 0.9rem;
-        font-weight: 600;
-    }
-
-    .banner-text a:hover {
-        background: #cc4e00;
-        color: #ffffff;
-        transform: scale(1.05);
-    }
-
-    .info {
-        margin-top: 20px;
-        text-align: center;
-        font-size: 1.5rem;
-        color: #cc4e00;
-    }
-
-    .content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 5px;
-        padding: 20px;
-    }
-
-    .info1, .info3 {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
-        border-radius: 10px;
-        background: #00357a;
-        padding: 15px;
-        gap: 8px;
-    }
-
-    .info2, .info4 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding:10px;
-        gap: 10px;
-    }
-
-    .info1 img, .info2 img, .info3 img, .info4 img {
-        width: 150px;
-        height: 150px;
-    }
-
-    .info1 p, .info3 p {
-        color: #ffffff;
-        font-size: 1rem;
-        text-align: right;
-        font-weight: 500;
-    }
 
 
-    .info2 p, .info4 p {
-        color: #cc4e00;
-        font-size: 1rem;
-        text-align: left;
-    } 
-    
-}
-
-@media (max-width: 430px) {
+@media (max-width: 480px) {
     .logo img{
         width: 100px;
         height: auto;
@@ -560,7 +352,6 @@ body {
     .icon {
         display: block; /* Show hamburger */
         color: #cc4e00;
-        z-index: 1000;
     }
 
     .navLinks {
@@ -604,12 +395,25 @@ body {
     }
 
     .boxes {
-        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
         height: auto;
     }
 
+    .tabs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .tab1, .tab2, .tab3 {
-        width: 90%;
+        width: 300px;
+        height: auto;
+        padding: 15px;
     }
 
     .tab1 img, .tab2 img, .tab3 img {
@@ -644,18 +448,19 @@ body {
     }
 
     .banner p {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
     }
 
     .banner a {
         text-align: center;
-        width: 65%;
+        width: 75%;
+        font-size: 0.9rem;
     }
 
     .banner-text a:hover {
         background: #cc4e00;
         color: #ffffff;
-        transform: scale(1.05);
+        transform: scale(1.1);
     }
 
     .bannerImage img {
@@ -678,12 +483,14 @@ body {
 
     .info1, .info3 {
         display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
+        background-color: #00357a;
+         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         border-radius: 25px;
-        border: #000000 0.5px solid;
-        padding: 5px;
+        padding: 10px;
         gap: 10px;
     }
 
@@ -696,6 +503,7 @@ body {
         box-sizing: border-box;
         border-radius: 25px;
         border: #000000 0.5px solid;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         padding: 10px;
         gap: 5px;
     }
@@ -708,14 +516,14 @@ body {
     .info1 p, .info3 p {
         color: #ffffff;
         font-size: 0.8rem;
-        text-align: right;
+        text-align: left;
         font-weight: 500;
     }
 
     .info2 p, .info4 p {
         color: #cc4e00;
         font-size: 0.8rem;
-        text-align: left;
+        text-align: right;
     } 
 
 }

@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="head"></head>
-<script src="JavaScript/head.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="stylesheet" href="Css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Home | GCM</title>
+</head>
 
 <body>
-    <div id="preloader">
-        <img src="Images/logo.svg" alt="Global Champions Ministries Logo" class="loader-logo">
-    </div>
-
     <header class="main-header">
-        <div class="logo">
-            <a href="index.html" class="logo">
-                <img src="Images/logo.svg" alt="Global Champions Ministries Logo">
+            <div class="logo">
+                <a href="index.html" class="logo">
+                    <img src="Images/logo.svg" alt="Global Champions Ministries Logo">
+                </a>
+            </div>
+
+            <nav id="myLinks" class="navLinks">
+                <a href="about.html" target="_self"> About</a>
+                <a href="events.html" target="_self"> Events </a>
+                <a href="donate.html" target="_self"> Give </a>
+                <a id="CTO" href="contact.html" target="self"> Get In Touch</a>
+            </nav>
+
+            <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
+                <i class="fas fa-bars"></i>
             </a>
         </div>
-
-
-        <nav id="myLinks" class="navLinks">
-            <a href="about.html" target="_self"> About</a>
-            <a href="events.html" target="_self"> Events </a>
-            <a href="donate.html" target="_self"> Give </a>
-            <a id="CTO" href="contact.html" target="self"> Get In Touch</a>
-        </nav>
-
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
-            <i class="fas fa-bars"></i>
-        </a>  
     </header>
 
     <main>
@@ -155,7 +159,6 @@
         </section>
     </main>
     <footer id="footer"></footer>
-    <script src="JavaScript/preloader.js"></script>
     <script src="JavaScript/footer.js"></script>
     <script src="JavaScript/nav.js"></script>
 </body>
