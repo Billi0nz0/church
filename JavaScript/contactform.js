@@ -1,25 +1,39 @@
-// Make sure to include the emailjs-com script in your HTML file, not here.
 
-// Initialize EmailJS
-(function() {
-  emailjs.init("aHk1tpfTEROjRu8ie"); // replace with actual key
-})();
+  // Initialize EmailJS
+  emailjs.init("aHk1tpfTEROjRu8ie");
 
-document.getElementById("contact-form").addEventListener("submit", function(event) {
-  event.preventDefault();
+  const form = document.getElementById("contact-form");
+  const spinner = document.getElementById("spinner");
+  const statusMessage = document.getElementById("statusMessage");
 
-  // Send main message
-  emailjs.sendForm("service_jdyds9v", "template_t5ie0rl", this)
-    .then(function() {
-      alert("✅ Message sent successfully!");
-      // Send auto-reply to the user using a different template
-      return emailjs.sendForm("service_jdyds9v", "template_t5ie0rl", event.target);
-    })
-    .then(function() {
-      console.log("Auto-reply sent to user");
-    })
-    .catch(function(error) {
-      alert("❌ Failed to send message. Check console.");
-      console.error("Error:", error);
-    });
-});
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // Reset status
+    spinner.style.display = "block";
+    statusMessage.style.display = "none";
+
+    // 1. Send the main message
+    emailjs.sendForm("service_jdyds9v", "template_mq5thcl", form)
+      .then(() => {
+        // 2. Send auto-reply to user
+        return emailjs.sendForm("service_jdyds9v", "template_t5ie0rl", form);
+      })
+      .then(() => {
+        // Success
+        spinner.style.display = "none";
+        statusMessage.style.display = "block";
+        statusMessage.style.color = "green";
+        statusMessage.textContent = "Message sent successfully! Check your inbox for confirmation.";
+        form.reset();
+      })
+      .catch((error) => {
+        // Failure
+        spinner.style.display = "none";
+        statusMessage.style.display = "block";
+        statusMessage.style.color = "red";
+        statusMessage.textContent = "Failed to send message. Please try again.";
+        console.error("EmailJS Error:", error);
+      });
+  });
+

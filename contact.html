@@ -33,12 +33,11 @@
     </header>
 
     <main>
-        <div id="form">
+        <section id="formSection">
             <div class="formImg">
                 <h2 class="contact-title">Contact Us</h2>
                 <img src="Images/ICONS/contacticon.svg" alt="contact">
             </div>
-
 
             <div>
                 <form class="content" id="contact-form" method="POST">
@@ -48,41 +47,43 @@
                     </h1>
 
                     <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" required><br><br>
+                    <input type="text" id="name" name="name" autocomplete="name" required><br><br>
 
                     <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" required><br><br>
+                    <input type="email" id="email" name="email" autocomplete="email" required><br><br>
 
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" required></textarea><br><br>
+                    <textarea id="message" name="message" autocomplete="message" required></textarea><br><br>
 
                     <button type="submit">Send Message</button>
-                    <div id="form-status"></div>
+                    <div id="sendBtn"></div>
+
+                    <div id="spinner" style="display: none;"> sending.. </div>
+                    <div id="statusMessage" style="display: none;">
                 </form>
             </div>
-        </div>   
+        </section>  
 
-        <div class="contact-us">
+        <section class="contact-us">
             <h1 class="others-title"> You can also contact us through</h1>
             <div class="others"> 
                 <div class="c1">
                     <p> Social Media</p>
                     <div>
-                        <img src="Images/ICONS/social media icon .svg" alt="social media icons">
+                        <img src="/Images/ICONS/social media icon .svg" alt="social media icons">
                     </div>
                     <div class="links">
                         <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
                         <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
                         <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://youtube.com/yourpage" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>
-                    
+                    </div>  
                 </div>
 
                 <div class="c2">
                     <p> Mail </p>
                     <div>
-                        <img src="Images/ICONS/MAIL ICONICON.png" alt="mail-icon">
+                        <img src="/Images/ICONS/MAIL ICONICON.png" alt="mail-icon">
                     </div>
                     <a href="mailto:yourname@email.com"><i class="fas fa-envelope"></i> contact@gcm.com </a>
                 </div>
@@ -90,16 +91,17 @@
                 <div class="c3">
                     <p> Or walk into any of our branches <br> at the following locations </p>
                     <div>
-                        <img src="Images/ICONS/LOCATION ICON.png" alt="location icon">
+                        <img src="/Images/ICONS/LOCATION ICON.png" alt="location icon">
                     </div>
                     <a href="https://www.google.com/maps/place/7+Osinaike+Oluwawemimo+St,+Ilasamaja,+Lagos+102214,+Lagos/@6.4968659,3.3088329,17z/data=!4m6!3m5!1s0x103b8ec4ca8752b7:0x92b9bc0377ac403e!8m2!3d6.4968659!4d3.3088329!16s%2Fg%2F11h15_bbsj?utm_campaign=ml-sbr&g_ep=Eg1tbF8yMDI1MDgyMF8wIOC7DCoASAJQAg%3D%3D" target="_blank">
                     <i class="fas fa-map-marker-alt"></i> <b>7 Osinaike Oluwawemimo <br> 
                     Cresent, by Cement</b> Bus Stop,<br> Ago Palace Way, Okota, Lagos. </a>
-
                 </div>
             </div>
-        </div>
+        </section>
+        
     </main>
+
     <footer id="footer"></footer>
     <script src="JavaScript/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>

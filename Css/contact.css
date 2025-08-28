@@ -86,16 +86,15 @@ main {
     padding-top: 8%;
 }
 
-#form {
+#formSection {
     display: grid;
     grid-template-columns: 1fr 1fr;  /* image left, form right */
-    align-items: center;
-    justify-items: center;
+    place-items: center;
     gap: 40px;
     padding: 40px;
 } 
 
-#form h2 {
+#formSection h2 {
     font-size: 4rem;
     color: #cc4e00;
     text-align: center;
@@ -162,7 +161,6 @@ textarea {
     border-radius: 6px;
 }
 
-/* Button */
 form button {
     padding: 12px;
     width: 40%;
@@ -266,6 +264,20 @@ i:hover {
     color: #ffffff;
 }
 
+#spinner {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+#statusMessage {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+    
+
 @media (max-width: 1024px) {
     main {
         display: flex;
@@ -273,25 +285,25 @@ i:hover {
         justify-content: center;
     }
 
-    #form {
+    #formSection {
         grid-template-columns: 1fr;   /* stack items */
         gap: 30px;
         padding: 20px;
         place-items: center;
     }
 
-    #form img {
+    #formSection img {
         width: 200px;
         height: auto;
     }
 
-    #form h2 {
+    #formSection h2 {
         font-size: 3rem;
     }
 
     form {
         width: 70%;
-        margin-left: 0 auto;
+        margin: 0 auto;
 
     }
 
@@ -321,7 +333,7 @@ i:hover {
         margin: 0 auto;
     }
 
-    #form h2 {
+    #formSection h2 {
         font-size: 2.5rem;
     }
 
@@ -340,6 +352,10 @@ i:hover {
 }
 
 @media (max-width: 480px) {
+    main {
+        padding-top: 30%;
+    }
+
     .logo img{
         width: 100px;
         height: auto;
@@ -380,8 +396,8 @@ i:hover {
         color: #ffffff;
     }
 
-    #form h2 {
-        font-size: 1rem;
+    #formSection h2 {
+        font-size: 1.5rem;
     }
 
     form {
