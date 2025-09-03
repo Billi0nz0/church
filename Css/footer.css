@@ -8,13 +8,12 @@
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     box-sizing: border-box;
     max-width: 100%;
     max-height: auto;
     background: #00357a;
     padding: 20px;
-    gap: 10px;
+    gap: 100px;
 }
 
 .footer-content {
@@ -22,7 +21,7 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    gap: 20px;
+    gap: 30px;
 }
 
 .socials {
@@ -73,17 +72,24 @@ i:hover {
 .contact {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 10px;
 }
 
-.contact a, p {
+.contact a {
     color: #ffffff;
     font-size: 1rem;
     text-decoration: none;
     line-height: 1.5;
-    text-align: left;
+    text-align: justify;
     transition: color 0.5s ease;
+}
+
+.contact p {
+    color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .contact a:hover {
