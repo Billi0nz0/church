@@ -10,7 +10,7 @@ body {
     height: auto;
     margin-top: 0;
     gap: 20px;
-    font-family: "poppins", sans-serif;
+   font-family: "Jost", sans-serif;
 }
 
 .main-header {
@@ -30,7 +30,7 @@ body {
 }
 
 .logo img {
-    width: 120px;
+    width: 60px;
     height: auto;
 }
 
@@ -98,7 +98,7 @@ main {
     font-size: 4rem;
     color: #cc4e00;
     text-align: center;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 #form img {
@@ -120,7 +120,7 @@ form {
 .head {
     font-size: 1.5rem;
     color: #ffffff;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
     font-weight: 400;
     text-align: center;
     margin-bottom: 10px;
@@ -131,7 +131,6 @@ label {
     margin-bottom: 6px;
     font-size: 1rem;
     color: #ffffff;
-    font-family: "poppins", sans-serif;
     text-align: left;
 }
 
@@ -199,12 +198,12 @@ form input:focus, form textarea:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     box-sizing: border-box;
     width: 70vw;
     height: auto;
     padding: 20px;
-    gap: 20px;
+    gap: 10px;
     background-color: #00357a;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
@@ -212,9 +211,9 @@ form input:focus, form textarea:focus {
 
 .others-title {
     font-size: 2rem;
-    font-family: "Kaisei HarunoUmi", sans-serif;
     font-weight: 500;
     margin-bottom: 10px;
+    font-family: 'Cinzel', serif;
     color :#cc4e00;
 }
 
@@ -230,11 +229,12 @@ form input:focus, form textarea:focus {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    padding: 30px;
+    gap: 5px;
 }
 
 .c1 img, .c2 img, .c3 img {
-    width: 100px;
+    width: 80px;
     height: auto;
 }
 
@@ -242,8 +242,9 @@ form input:focus, form textarea:focus {
     font-size: 1.3rem;
     color: #ffffff;
     font-weight: 500;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
 }
+
 
 i {
     font-size: 24px;
@@ -353,11 +354,11 @@ i:hover {
 
 @media (max-width: 480px) {
     main {
-        padding-top: 30%;
+        padding-top: 100px;
     }
 
     .logo img{
-        width: 100px;
+        width: 40px;
         height: auto;
     }
 
@@ -428,6 +429,10 @@ i:hover {
     }
 
     .c1 p, .c2 p, .c3 p {
+        font-size: 0.9rem;
+    }
+
+    .c3 a {
         font-size: 0.9rem;
     }
 }

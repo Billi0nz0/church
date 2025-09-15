@@ -7,7 +7,7 @@
 body {
     height: auto;
     margin-top: 0;
-    font-family: "Raleway", sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 main {
@@ -52,8 +52,9 @@ main {
     text-align: center;
     font-size: 2.5rem;
     color: #cc4e00;
-    font-family: "pacifico", sans-serif;
+    font-family: 'Cinzel', serif;
 }
+
 
 .donatetxt p {
     text-align: center;
@@ -62,7 +63,7 @@ main {
 }
 
 .logo img {
-    width: 120px;
+    width: 80px;
     height: auto;
 }
 
@@ -118,21 +119,21 @@ main {
     transform: scale(1.05);
 }
 
-.image img {
-    width: 200px;
-    height: auto;
+
+.text {
+    padding: 50px;
 }
 
 .title h1 {
     padding: 10px;
     font-size: 2.5rem;
-    font-family: "pacifico", sans-serif;
     text-align: center;
-    font-style: italic;
+    font-style: bold;
+    font-family: 'Cinzel', serif;
 }
 
 hr{
-    width: 75%;
+    width: 90%;
     margin: auto;
 }
 
@@ -146,14 +147,14 @@ hr{
 }
 
 .cash img, .bank img {
-    width: 200px;
+    width: 150px;
     height: auto;
 }
 
 .cash h1, .bank h1 {
     font-style: 2rem;
     text-align: left;
-    font-family: "pacifico", sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 .cash p, .bank p {
@@ -173,9 +174,9 @@ hr{
 @media (max-width: 780px) {
     .donatetxt h1 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #cc4e00;
-        font-family: "pacifico", sans-serif;
+        font-family: 'Cinzel', serif;
     }
 
     .donatetxt p {
@@ -185,7 +186,7 @@ hr{
     }
 
     .logo img{
-        width: 100px;
+        width: 60px;
         height: auto;
     }
 
@@ -200,7 +201,7 @@ hr{
     }
 
     .title h1 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .cash, .bank {
@@ -214,21 +215,21 @@ hr{
     }
 
     .cash h1, .bank h1 {
-        font-size: 1.3rem;
+        font-size: 1.5rem;
         text-align: left;
-        font-family: "pacifico", sans-serif;
+        font-family: 'Cinzel', serif;
     }
 
     .cash p, .bank p {
         text-align: left;
         color: #000;
-        font-size: 0.9rem;
+        font-size: 1.1rem;
     }
 
     #end {
         text-align: center;
         color:black;
-        font-size: 0.8rem;
+        font-size: 1.2rem;
     }
 
 
@@ -245,7 +246,7 @@ hr{
         text-align: center;
         font-size: 1rem;
         color: #cc4e00;
-        font-family: "pacifico", sans-serif;
+        font-family: 'Cinzel', serif;
     }
 
     .donatetxt p {
@@ -255,7 +256,7 @@ hr{
     }
 
     .logo img{
-        width: 100px;
+        width: 40px;
         height: auto;
     }
 
@@ -263,7 +264,7 @@ hr{
         position: fixed;
         top: 0;
         left: -250px; /* start hidden off screen */
-        height: auto;
+        height: 100vh;
         width: 250px;
         background: #fcfcfce8;
         flex-direction: column;
@@ -317,14 +318,14 @@ hr{
     }
 
     .cash img, .bank img {
-        width: 90px;
+        width: 70px;
         height: auto;
     }
 
     .cash h1, .bank h1 {
         font-size: 1.3rem;
         text-align: left;
-        font-family: "pacifico", cursive;
+        font-family: 'Cinzel', serif;
     }
 
     .cash p, .bank p {
@@ -336,7 +337,7 @@ hr{
     #end {
         text-align: center;
         color:black;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
 

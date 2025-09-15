@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 .main-header {
@@ -22,7 +22,7 @@ body {
 }
 
 .logo img {
-    width: 120px;
+    width: 60px;
     height: auto;
 }
 
@@ -101,7 +101,7 @@ main {
     text-align: left;
     color: #ffffff;
     font-size: 2.3rem;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
     font-weight: 300;
 }
 
@@ -113,7 +113,7 @@ main {
     text-align: left;
     font-size: 2.5rem;
     color: #cc4e00;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 .history p, .mission p {
@@ -145,7 +145,7 @@ main {
     font-size: 2.5rem;
     color: #cc4e00;
     text-align: left;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 .leaders p {
@@ -223,7 +223,7 @@ main {
 
 @media (max-width: 480px) {
     .logo img{
-        width: 100px;
+        width: 40px;
         height: auto;
     }
 
@@ -263,11 +263,11 @@ main {
     }
 
     main {
-        padding-top: 24.2%;
+        padding-top: 100px;
     }
 
     .intro h1 {
-        font-size: 1rem;
+        font-size: 1.3rem;
         text-align: right;
     }
 
@@ -277,7 +277,7 @@ main {
     }
 
     .history h1, .mission h1, .leaders h1 {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .history p, .mission p, .leaders p {

@@ -7,7 +7,7 @@
 body {
     height: auto;
     margin-top: 0;
-    font-family: "poppins", sans-serif;
+    font-family: "Jost", sans-serif;
 }
 
 main{
@@ -53,19 +53,18 @@ main{
     text-align: center;
     font-size: 3rem;
     color: #cc4e00;
-    font-family: "Kaisei HarunoUmi", sans-serif;
+    font-family: 'Cinzel', serif;
 }
 
 .titletxt p {
     text-align: center;
     font-size: 1.5rem;
     color: #ffffff;
-    font-family: "poppins", sans-serif;
     margin-top: 10px;
 }
 
 .logo img {
-    width: 120px;
+    width: 60px;
     height: auto;
 }
 
@@ -154,9 +153,8 @@ main{
     font-size: 2rem;
     text-align: left;
     color: #ffffff;
-    font-family: "Kaisei HarunoUmi", sans-serif;
-    font-weight: 400;
-    font-style: italic;
+    font-family: 'Cinzel', serif;
+    font-weight: 600;
 }
 
 .w1 p, .w2 p, .w3 p {
@@ -221,7 +219,7 @@ hr {
 
 .joinbtn {
     display: inline-block;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Cinzel', serif;
     font-weight: 600;
     text-decoration: none;
     color: var(--brand);
@@ -275,7 +273,6 @@ hr {
     border: none;
     border-radius: 10px;
     width: 50%;
-   
     background-color: #00357a;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
     gap: 20px;
@@ -332,7 +329,7 @@ hr {
 
 @media (max-width: 480px) {
     .logo img{
-        width: 100px;
+        width: 40px;
         height: auto;
     }
 
