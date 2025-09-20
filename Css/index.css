@@ -101,6 +101,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: lightgray;
+    border: none;
     padding: 50px;
     gap: 10px;
 }
@@ -642,6 +643,11 @@ hr {
 
     .info {
         font-size: 1rem;
+    }
+
+
+    .info h1 {
+        font-size: 1.5rem;
     }
 
     .content {

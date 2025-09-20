@@ -13,7 +13,7 @@ footer {
     max-height: auto;
     background: #00357a;
     padding: 20px;
-    gap: 100px;
+    gap: 30px;
 }
 
 .footer-content {
@@ -35,6 +35,7 @@ footer {
     color:#ffffff;
     text-align: center;
     font-family: 'Cinzel', serif;
+    font-weight: bold;
 }
 
 i {
@@ -60,7 +61,7 @@ i:hover {
 
 .footernav a {
     color: #ffffff;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-decoration: none;
     line-height: 1.7rem;
     text-align: center;
@@ -84,7 +85,7 @@ i:hover {
     font-size: 1.3rem;
     text-decoration: none;
     line-height: 1.5;
-    text-align: justify;
+    text-align: center;
     transition: color 0.5s ease;
 }
 
@@ -127,6 +128,32 @@ i:hover {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .footernav a {
+        font-size: 1rem;
+    }
+
+    .socials p {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    i {
+        font-size: 20px;
+    }
+
+    .footernav a {
+        font-size: 1rem;
+    }
+
+    .contact a {
+        font-size: 1rem;
+    }
+
+
+    .c p {
+        font-size: 1rem;
     }
 
 }
