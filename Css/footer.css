@@ -43,7 +43,7 @@ i {
     text-decoration: none;
     color: #ffffff;
     margin: 0 8px;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 i:hover {
@@ -65,7 +65,7 @@ i:hover {
     text-decoration: none;
     line-height: 1.7rem;
     text-align: center;
-    transition: color 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .footernav a:hover {
@@ -86,7 +86,7 @@ i:hover {
     text-decoration: none;
     line-height: 1.5;
     text-align: center;
-    transition: color 0.5s ease;
+    transition: transform 0.5s ease;
 }
 
 .contact p {
