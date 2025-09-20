@@ -388,6 +388,10 @@ hr {
         z-index: 1100;
     }
 
+    .weeklyevents {
+        width: 100%;
+    }
+
     .datetime {
         flex-direction: column;
         gap: 10px;
@@ -396,7 +400,6 @@ hr {
 
     .w1, .w2, .w3 {
         padding: 20px;
-        width: 100%;
     }
 
     .w1 img, .w2 img, .w3 img {
