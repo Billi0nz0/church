@@ -10,7 +10,11 @@ body {
     height: auto;
     margin-top: 0;
     gap: 20px;
-   font-family: "Jost", sans-serif;
+    font-family: "Jost", sans-serif;
+    background: url(../Images/backgroundbdy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .main-header {

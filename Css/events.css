@@ -8,6 +8,10 @@ body {
     height: auto;
     margin-top: 0;
     font-family: "Jost", sans-serif;
+    background: url(../Images/backgroundbdy.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 main{
@@ -138,7 +142,7 @@ main{
     padding: 30px;
     border: none;
     border-radius: 10px;
-    width: 80%;
+    width: 95%;
     background-color: #00357a;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
     gap: 20px;
@@ -206,7 +210,7 @@ main{
 
 hr {
     border: none;
-    border-top: 1px solid #000000;
+    border-top: 1px solid #cc4e00;
     margin: auto;
     width: 70%;
     margin-top: 20px;
