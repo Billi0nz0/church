@@ -246,12 +246,11 @@ body {
 .banner {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    border-radius: 30px;
-    padding-left: 50px;
-    width: 1200px;
+    padding-left: 30px;
+    width: 100%;
     height: auto;
     gap: 30px;
     background: #00357a;
@@ -630,7 +629,7 @@ hr {
     .banner {
         display: flex;
         flex-direction: row;
-        max-width: 100%;
+        width: 95%;
         height: 180px;
     }
 
@@ -646,8 +645,8 @@ hr {
 
     .banner a {
         text-align: center;
-        width: 70%;
-        font-size: 0.9rem;
+        width: 75%;
+        font-size: 0.8rem;
     }
 
     .banner-text a:hover {
@@ -685,8 +684,10 @@ hr {
         justify-content: space-between;
         align-items: center;
         box-sizing: border-box;
-        background-color: #00357a;
-         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        width: auto;
+        height: auto;
+        background-color: #000000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         border-radius: 25px;
         padding: 10px;
         gap: 10px;
@@ -698,6 +699,8 @@ hr {
         justify-content: space-between;
         align-items: center;
         text-align: left;
+        width: auto;
+        height: auto;
         box-sizing: border-box;
         border-radius: 25px;
         border: #000000 0.5px solid;
@@ -719,7 +722,7 @@ hr {
     }
 
     .info2 p, .info4 p {
-        color: #cc4e00;
+        color: #ffffff;
         font-size: 0.8rem;
         text-align: right;
     } 
