@@ -296,6 +296,7 @@ body {
 hr {
     margin: auto;
     width: 80%;
+    color: #cc4e00;
 }
 
 .info {
@@ -626,7 +627,7 @@ hr {
 
     .banner a {
         text-align: center;
-        width: 65%;
+        width: 70%;
         font-size: 0.9rem;
     }
 
