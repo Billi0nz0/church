@@ -110,7 +110,7 @@ main {
 
 form {
     width: 600px;
-    background-color: #ffffff;
+    background: url(../Images/gradient.jpg) center/cover no-repeat;
     border: none;
     border-radius: 15px;
     padding: 30px;
@@ -140,8 +140,9 @@ input[type="email"] {
     padding: 10px 12px;
     width: 50%;
     background-color: rgb(219, 219, 219);
-    border: none;
-    outline: none;               
+    box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
+    outline: none;
+    border: none;               
     transition: all 0.3s ease; 
     box-sizing: border-box;
     font-size: 1rem;
@@ -154,7 +155,8 @@ textarea {
     width: 100%;
     background-color: rgb(219, 219, 219);
     border: none;
-    outline: none;         
+    outline: none;
+    box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);         
     transition: all 0.3s ease; 
     box-sizing: border-box;
     font-size: 1rem;
