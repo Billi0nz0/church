@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -20,7 +20,6 @@ body {
     left: 0;
     width: 100%;
     height: 80px;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,19 +68,17 @@ body {
     font-size: 26px;
     cursor: pointer;
     z-index: 1100;
-    color: #ffffff;
+    color: #cc4e00;
 }
 
 .icon i {
     font-size: 24px;
     text-decoration: none;
-    color: #ffffff;
     margin: 0 8px;
     transition: color 0.3s ease;
 }
 
 .icon i:hover {
-    color: #ffffff;
     transform: scale(1.05);
 }
 
@@ -113,7 +110,8 @@ body {
 
 .hero-text span {
     color: #cc4e00;
-    font-weight: bolder;
+    font-weight: 900;
+    font-family: 'lato', sans-serif;
 }
 
 .hero-text p {
@@ -178,7 +176,6 @@ body {
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     transition: transform 0.3s ease, background 0.3s ease;
-
 }
 
 .tab2, .tab3 {
@@ -202,7 +199,7 @@ body {
 } 
 
 .tab1 img, .tab2 img, .tab3 img {
-    width: 170px;
+    width: 150px;
     height: 100px;
 }
 
@@ -220,9 +217,9 @@ body {
 } 
 
 .tab1 a, .tab2 a, .tab3 a {
-    padding: 13px;
+    padding: 10px;
     background: #ffffff;
-    border-radius: 50px;
+    border-radius: 15px;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 500;
@@ -237,7 +234,7 @@ body {
 }
 
 .placeholder {
-     display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -367,7 +364,7 @@ hr {
     font-size: 2rem;
     color: #000000;
     padding-bottom: 20px;
-    font-weight: 700;
+    font-weight: 900;
     font-family: "lato", sans-serif;
 }
 
@@ -466,7 +463,7 @@ hr {
         backdrop-filter: blur(12px);
         -webkit-backdrop-filter: blur(12px);
         border: 1px solid rgba(255, 255, 255, 0.3);
-        color: #ffffff;
+     
         transition: left 0.3s ease-in-out; /* smooth slide */
         z-index: 1000;
     }
@@ -484,7 +481,7 @@ hr {
     
     #CTO {
         width: auto;
-        color: #000000;
+        color: #ffffff;
     }
 
     .hero {
@@ -555,7 +552,6 @@ hr {
 
     .banner h1 {
         font-size: 1.5rem;
-        color: #ffffff;
         line-height: 1;
     }
 
