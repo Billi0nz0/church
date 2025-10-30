@@ -253,7 +253,10 @@ body {
     width: 100%;
     height: auto;
     gap: 30px;
-    background: #00357a;
+    background: url(../Images/gradient.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     border: none; 
 }
@@ -273,14 +276,15 @@ body {
 
 .banner h1 {
     font-size: 5rem;
-    color: #ffffff;
-    font-family: "Jost", sans-serif;
+    color: #00357a;
+    font-family: "lato", sans-serif;
+    font-weight: 900;
     line-height: 1.2;
 }
 
 .banner p {
     font-size: 2rem;
-    color: #ffffff
+    color: #00357a;
 }
 
 .banner a {
