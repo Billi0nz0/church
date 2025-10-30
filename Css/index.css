@@ -442,11 +442,6 @@ hr {
         height: auto;
     }
 
-    .navLinks.show {
-        max-height: 500px;
-        padding: 10px;
-    }
-
     .icon {
         display: block; /* Show hamburger */
     }
@@ -456,18 +451,24 @@ hr {
     }
 
     .navLinks {
-        display: flex;
+        position: fixed;
+        top: 0;
+        left: -250px; /* start hidden off screen */
+        height: 100vh;
+        width: 250px;
         flex-direction: column;
-        background: #fcfcfce8;
-        position: absolute;
-        top: 80px;
-        right: 10px;
-        padding: 0 10px;
-        border-radius: 8px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.4s ease;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 15px;
+        border-radius: 0 8px 8px 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #ffffff;
+        transition: left 0.3s ease-in-out; /* smooth slide */
+        z-index: 1000;
     }
 
     .navLinks a {
@@ -476,10 +477,14 @@ hr {
         font-size: 0.8rem;
         text-decoration: none;
     }
+
+    .navLinks.show {
+        left: 0; /* slide into view */
+    }
     
     #CTO {
         width: auto;
-        color: #ffffff;
+        color: #000000;
     }
 
     .hero {

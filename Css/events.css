@@ -300,16 +300,19 @@ hr {
         position: fixed;
         top: 0;
         left: -250px; /* start hidden off screen */
-        height: auto;
+        height: 100vh;
         width: 250px;
-        background: #fcfcfce8;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         padding: 20px;
         gap: 15px;
         border-radius: 0 8px 8px 0;
-        box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        color: #ffffff;
         transition: left 0.3s ease-in-out; /* smooth slide */
         z-index: 1000;
     }
