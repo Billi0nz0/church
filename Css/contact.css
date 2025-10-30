@@ -11,10 +11,7 @@ body {
     margin-top: 0;
     gap: 20px;
     font-family: "Jost", sans-serif;
-    background: url(../Images/backgroundbdy.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background: url(../Images/black.jpg) center/cover no-repeat fixed; 
 }
 
 .main-header {
@@ -23,13 +20,14 @@ body {
     left: 0;
     width: 100%;
     height: 100px;
-    background: #00357a;
-    color: #fff;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 16px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px) saturate(120%);
+    -webkit-backdrop-filter: blur(15px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     z-index: 1000;
 }
 
@@ -100,9 +98,9 @@ main {
 
 #formSection h2 {
     font-size: 4rem;
-    color: #cc4e00;
+    color: #ffffff;
     text-align: center;
-    font-family: 'Cinzel', serif;
+    font-family: 'jost', serif;
 }
 
 #form img {
@@ -112,18 +110,20 @@ main {
 
 form {
     width: 600px;
-    background-color: #00357a;
+    background-color: #ffffff;
     border: none;
     border-radius: 15px;
     padding: 30px;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .head {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #000000;
     font-family: 'Cinzel', serif;
     font-weight: 400;
     text-align: center;
@@ -131,11 +131,8 @@ form {
 }
 
 label {
-    display: block;
-    margin-bottom: 6px;
     font-size: 1rem;
-    color: #ffffff;
-    text-align: left;
+    color: #000000;
 }
 
 input[type="text"], 
@@ -168,8 +165,8 @@ form button {
     padding: 12px;
     width: 40%;
     align-self: center; 
-    background-color: #ffffff;
-    color: #00357a;
+    background-color: #000000;
+    color: #ffffff;
     border-radius: 10px;
     border: none;
     font-size: 1rem;
@@ -179,8 +176,8 @@ form button {
 }
 
 form button:hover {
-    background-color: #cc4e00;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000000;
     transform: scale(1.05);
 }
 
@@ -207,18 +204,19 @@ form input:focus, form textarea:focus {
     width: 70vw;
     height: auto;
     padding: 20px;
-    gap: 10px;
-    background-color: #00357a;
+    gap: 5px;
+    background-color: #000000;
+    border: solid 2px #726e6e;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
 }
 
 .others-title {
     font-size: 2rem;
-    font-weight: 500;
+    font-weight: 900;
     margin-bottom: 10px;
-    font-family: 'Cinzel', serif;
-    color :#cc4e00;
+    font-family: 'lato', serif;
+    color :#ffffff;
 }
 
 .link {
@@ -238,7 +236,7 @@ form input:focus, form textarea:focus {
 }
 
 .c1 img, .c2 img, .c3 img {
-    width: 80px;
+    width: 60px;
     height: auto;
 }
 
@@ -366,10 +364,6 @@ i:hover {
         height: auto;
     }
 
-    .navLinks.show {
-        display: flex;
-    }
-
     .icon {
         display: block; /* Show hamburger */
         color: #cc4e00;
@@ -378,7 +372,7 @@ i:hover {
 
     .navLinks {
         position: fixed;
-        top: 0;
+        top: 100px;
         left: -250px; /* start hidden off screen */
         height: 100vh;
         width: 250px;
@@ -402,14 +396,14 @@ i:hover {
     }
 
     .navLinks a {
-        color: #cc4e00;
+        color: #ffffff;
         padding: 8px 0;
         font-size: 0.8rem;
         text-decoration: none
     }
     
     #CTO {
-        width: 100%;
+        width: 70%;
         color: #ffffff;
     }
 
@@ -417,10 +411,18 @@ i:hover {
         font-size: 1.5rem;
     }
 
+    .contact-title {
+        font-size: 1.5rem;
+    }
+
     form {
         width: 95%;
         padding: 20px;
         margin-right: 0 auto;
+    }
+
+    .formImg img {
+        display: none;
     }
 
     .head {
@@ -437,7 +439,7 @@ i:hover {
     }
 
     .others-title{
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
     
     .others {
