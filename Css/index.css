@@ -8,7 +8,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background: url(../Images/gradient.jpg) center/cover no-repeat fixed;
+    background: #ffffff;
     height: auto;
     margin-top: 0;
     gap: 20px;
@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 30px;
     background: rgba(255, 255, 255, 0.15);  /* more visible glass tint */
     backdrop-filter: blur(18px) saturate(160%);
     -webkit-backdrop-filter: blur(18px) saturate(160%);
@@ -42,13 +42,13 @@ body {
 
 .logo p {
     font-weight: 800;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: "lato", sans-serif;
     color: #000000;
 }
 
 .logo img {
-    width: 40px;
+    width: 45px;
     height: auto;
 }
 
@@ -86,14 +86,14 @@ body {
 
 .icon {
     display: none;
-    font-size: 26px;
+    font-size: 22px;
     cursor: pointer;
     z-index: 1100;
     color: #cc4e00;
 }
 
 .icon i {
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     margin: 0 8px;
     transition: color 0.3s ease;
@@ -242,9 +242,9 @@ body {
     background: #ffffff;
     border-radius: 15px;
     text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #cc4e00;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #000000;
     transition: background 0.3s ease-in-out;
 }
 
@@ -351,9 +351,9 @@ hr {
     align-items: center;
     text-align: center;
     box-sizing: border-box;
-    height: 500px;
+    height: 400px;
     width: 500px;
-    background: #000000;
+    background: url(../Images/gradient.jpg) center/cover no-repeat fixed;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     border-radius: 25px;
     padding: 20px;
@@ -366,9 +366,9 @@ hr {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 500px;
+    height: 400px;
     width: 500px;
-    background: #000000;
+    background: url(../Images/gradient.jpg) center/cover no-repeat fixed;
     box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     border-radius: 25px;
     padding: 20px;
@@ -399,7 +399,7 @@ hr {
 }
 
 .info1 p, .info2 p, .info3 p, .info4 p {
-    color: #ffffff;
+    color: #000000;
     font-size: 1.3rem;
 }
 
@@ -425,6 +425,10 @@ hr {
         font-size: 0.8rem;
     }
 
+    .tab1 h1, .tab2 h1, .tab3 h1 {
+        font-size: 1.8rem;
+    }
+
     .content {
         display: flex;
         flex-wrap: wrap;
@@ -435,8 +439,56 @@ hr {
     }
 
     .banner {
-        width: 95%;
+        width: 100%;
     }
+
+    .info1, .info3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        width: auto;
+        height: auto;
+        background-color: #000000;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        border-radius: 25px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .info2, .info4 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        width: auto;
+        height: auto;
+        box-sizing: border-box;
+        border-radius: 25px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .info1 img, .info2 img, .info3 img, .info4 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info1 p, .info3 p {
+        color: #000000;
+        font-size: 0.8rem;
+        text-align: left;
+        font-weight: 500;
+    }
+
+    .info2 p, .info4 p {
+        color: #000000;
+        font-size: 0.8rem;
+        text-align: right;
+    } 
 
 
 }
@@ -446,7 +498,7 @@ hr {
     header {
         width: 190px;
         height: auto;
-        padding: 30px;
+        padding: 20px;
         border-radius: 10px;
     }
 
@@ -470,13 +522,13 @@ hr {
     .navLinks {
         position: fixed;
         top: 80px;
-        left: -250px;
+        left: -260px;
         height: 100vh;
         width: 250px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 10px;
+        padding: 20px;
         gap: 15px;
         background: rgba(255, 255, 255, 0.336); /* semi-transparent */
         backdrop-filter: blur(30px) saturate(160%);
@@ -546,12 +598,12 @@ hr {
     }
 
     .tab1 img, .tab2 img, .tab3 img {
-        width: 50%;
+        width: 40%;
         height: auto;
     }
 
     .tab1 h1, .tab2 h1, .tab3 h1 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .tab1 p, .tab2 p, .tab3 p {
@@ -566,7 +618,7 @@ hr {
     .banner {
         display: flex;
         flex-direction: row;
-        width: 95%;
+        width: 100%;
         height: 180px;
     }
 
@@ -581,7 +633,6 @@ hr {
 
     .banner a {
         text-align: center;
-        width: 75%;
         font-size: 0.8rem;
     }
 
@@ -643,7 +694,6 @@ hr {
         height: auto;
         box-sizing: border-box;
         border-radius: 25px;
-        border: #000000 0.5px solid;
         box-shadow: 0 4px 10px rgba(0,0,0,0.15);
         padding: 10px;
         gap: 5px;
@@ -655,14 +705,14 @@ hr {
     }
 
     .info1 p, .info3 p {
-        color: #ffffff;
+        color: #000000;
         font-size: 0.8rem;
         text-align: left;
         font-weight: 500;
     }
 
     .info2 p, .info4 p {
-        color: #ffffff;
+        color: #000000;
         font-size: 0.8rem;
         text-align: right;
     } 
