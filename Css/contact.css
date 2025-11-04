@@ -86,7 +86,7 @@ body {
 }
 
 .icon i {
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     color: #ffffff;
     margin: 0 8px;
@@ -215,14 +215,13 @@ form input:focus, form textarea:focus {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     box-sizing: border-box;
-    width: 70vw;
     height: auto;
     padding: 20px;
     gap: 5px;
     background-color: #000000;
-    border: solid 2px #726e6e;
+    border: solid 5px #726e6e;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(31, 6, 55, 0.3);
 }
@@ -248,11 +247,11 @@ form input:focus, form textarea:focus {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    gap: 5px;
+    gap: 10px;
 }
 
 .c1 img, .c2 img, .c3 img {
-    width: 60px;
+    width: 40px;
     height: auto;
 }
 
@@ -393,7 +392,7 @@ i:hover {
     .navLinks {
         position: fixed;
         top: 80px;
-        left: -250px; /* start hidden off screen */
+        left: -260px; /* start hidden off screen */
         height: 100vh;
         width: 250px;
         flex-direction: column;
@@ -402,12 +401,13 @@ i:hover {
         padding: 20px;
         gap: 15px;
         border-radius: 0 8px 8px 0;
-        background: rgba(255, 255, 255, 0.404);
+        background: rgba(36, 35, 35, 0.404);
         backdrop-filter: blur(50px) saturate(160%);
         -webkit-backdrop-filter: blur(50px) saturate(160%);
         border: 1px solid rgba(255, 255, 255, 0.25);
         color: #ffffff;
         transition: left 0.3s ease-in-out; /* smooth slide */
+        z-index: 1;
     }
 
     .navLinks.show {
@@ -415,7 +415,7 @@ i:hover {
     }
 
     .navLinks a {
-        color: #000;
+        color: #ffffff;
         padding: 8px 0;
         font-size: 0.8rem;
         text-decoration: none

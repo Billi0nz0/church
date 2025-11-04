@@ -24,6 +24,11 @@ footer {
     gap: 20px;
 }
 
+.separator {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
 .socials {
     display: flex;
     align-items: center;
