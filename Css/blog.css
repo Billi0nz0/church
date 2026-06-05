@@ -132,3 +132,15 @@ body::before {
     line-height: 1.8;
     color: #fff;
 }
+
+@media (max-width: 480px){
+    .blog-header h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 110px;
+    }
+
+    .blog-grid {
+        grid-template-columns: 1fr;
+    }
+}
