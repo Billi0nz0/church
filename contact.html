@@ -4,113 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/contact.css">
-    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
     <link rel="icon"  href="./Images/logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Contact Form</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
-    <header class="main-header">
-        <div class="logo">
-                <a href="index.html" class="logo">
-                    <img src="Images/logo.svg" alt="Global Champions Ministries Logo">
-                </a>
-            </div>
+    <div id="header-container"></div>
 
+    <main class="contact-page">
+        <div class="contactHeader">
 
-        <nav id="myLinks" class="navLinks">
-            <a href="about.html" target="_self"> About</a>
-            <a href="events.html" target="_self"> Events </a>
-            <a href="donate.html" target="_self"> Give </a>
-            <a id="CTO" href="#" target="_self"> Get In Touch</a>
-        </nav>
+            <h1>Contact Us</h1>
+            <p>
+                Share your prayer requests or feedback.
+                We are here to listen and pray with you.
+            </p>
 
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
-            <i class="fas fa-bars"></i>
-        </a>  
-    </header>
+        </div>
 
-    <main>
-        <section id="formSection">
-            <div class="formImg">
-                <h2 class="contact-title">Contact Us</h2>
-                <img src="Images/ICONS/contacticon.svg" alt="contact">
-            </div>
+        <!-- HERO / FORM SECTION -->
+            <section class="contact-hero">
 
-            <div  class="formContainer">
-                <form class="content" id="contact-form" method="POST">
-                    <h1 class="head">
-                        Share your prayer requests or give us feedback
-                        we’re here to listen and pray with you.
-                    </h1>
+                <section class="contact-options">
 
-                    <label for="name">Full Name:</label><br>
-                    <input type="text" id="name" name="name" autocomplete="name" required><br><br>
+                <h2>You Can Also Reach Us Through</h2>
 
-                    <label for="email">Email Address:</label><br>
-                    <input type="email" id="email" name="email" autocomplete="email" required><br><br>
+                <div class="contact-grid">
 
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" autocomplete="message" required></textarea><br><br>
+                    <!-- Social -->
+                    <div class="contact-card">
+                        <h3>Social Media</h3>
+
+                        <div class="icons">
+                            <a href="https://www.facebook.com/share/18mCtbcgD5/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.tiktok.com/@globalchampionsmins?_r=1&_t=ZS-96xTaP35Xk0" target="_blank"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://www.instagram.com/globalchampions_ministries?igsh=a2h4MWt1eDJuN21r" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://youtube.com/@globalchampionsministries?si=j1SVu2T7jFEXqz_f" target="_blank"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card">
+                        <h3>Email</h3>
+
+                        <p>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:contact@gcm.com">contact@gcm.com</a>
+                        </p>
+                    </div>
+
+                    <!-- Locations -->
+                    <div class="contact-card wide">
+
+                        <h3>Our Locations</h3>
+
+                        <a href="https://www.google.com/maps/place/7+Osinaike+Oluwawemimo+St" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            7 Osinaike Oluwawemimo Crescent, Lagos
+                        </a>
+
+                        <a href="https://www.google.com/maps/search/3+saidi+ologunro+street" target="_blank">
+                            <i class="fas fa-map-marker-alt"></i>
+                            3 Saidi Ologunro Street, Sangotedo, Lagos
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <div class="contact-form-box">
+
+                <form id="contact-form">
+
+                    <h2>Send a Message</h2>
+
+                    <label>Full Name</label>
+                    <input type="text" name="name" required>
+
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+
+                    <label>Message</label>
+                    <textarea name="message" required></textarea>
 
                     <button type="submit">Send Message</button>
-                    <div id="sendBtn"></div>
 
-                    <div id="spinner" style="display: none;"> sending.. </div>
-                    <div id="statusMessage" style="display: none;">
+                    <div id="spinner" style="display: none; text-align: center; margin-top: 20px;"> <i class="fas fa-spinner fa-spin"></i> </div>
+                    <div style="text-align: center; margin-top: 20px;" id="statusMessage"></div>
+
                 </form>
-            </div>
-        </section>  
 
-        <section class="contact-us">
-            <h1 class="others-title"> You can also contact us through</h1>
-            <div class="others"> 
-                <div class="c1">
-                    <p> Social Media</p>
-                    <div>
-                        <img src="/Images/ICONS/social media icon .svg" alt="social media icons">
-                    </div>
-                    <div class="links">
-                        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://twitter.com/yourpage" target="_blank"><i class="fab fa-twitter"></i></a>
-                        <a href="https://instagram.com/yourpage" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://youtube.com/yourpage" target="_blank"><i class="fab fa-youtube"></i></a>
-                    </div>  
-                </div>
-                
-                <div class="c2">
-                    <p> Mail </p>
-                    <div>
-                        <img src="/Images/ICONS/MAIL ICONICON.png" alt="mail-icon">
-                    </div>
-                    <a href="mailto:yourname@email.com"><i class="fas fa-envelope"></i> contact@gcm.com </a>
-                </div>
-                
-                <div class="c3">
-                    <p> Or walk into any of our branches at the following locations </p>
-        
-                    <a href="https://www.google.com/maps/place/7+Osinaike+Oluwawemimo+St,+Ilasamaja,+Lagos+102214,+Lagos/@6.4968659,3.3088329,17z/data=!4m6!3m5!1s0x103b8ec4ca8752b7:0x92b9bc0377ac403e!8m2!3d6.4968659!4d3.3088329!16s%2Fg%2F11h15_bbsj?utm_campaign=ml-sbr&g_ep=Eg1tbF8yMDI1MDgyMF8wIOC7DCoASAJQAg%3D%3D" target="_blank">
-                    <i class="fas fa-map-marker-alt"></i> <b>7 Osinaike Oluwawemimo
-                    Cresent, by Cement</b> Bus Stop, <br/> Ago Palace Way, Okota, Lagos. </a>
-
-                    <a href="https://www.google.com/maps/search/3+saidi+ologunro+street+by+united+estate,+sangotedo+lagos+/@6.4687668,3.617326,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">
-                    <i class="fas fa-map-marker-alt"></i><b>3 Saidi Ologunro Street </b>
-                    by United Estate, Sangotedo, Lagos.
-                    </a>
-                </div>
             </div>
-        </section>
-        
+
+        </section> 
+
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer-container"></footer>
     <script src="JavaScript/nav.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="JavaScript/contactform.js"></script>
-    <script src="JavaScript/footer.js"></script>
+    <script src="JavaScript/components.js"></script>
 </body>
 </html>

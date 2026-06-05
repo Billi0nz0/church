@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/about.css">
-    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
+    <link rel="icon"  href="./Images/logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -16,26 +18,9 @@
 </head>
 
 <body>
-     <header class="main-header">
-        <div class="logo">
-            <a href="index.html" class="logo">
-                <img src="Images/logo.svg" alt="Global Champions Ministries Logo">
-            </a>
-        </div>
-
-
-        <nav id="myLinks" class="navLinks">
-            <a href="about.html" target="_self"> About</a>
-            <a href="events.html" target="_self"> Events </a>
-            <a href="donate.html" target="_self"> Give </a>
-            <a id="CTO" href="contact.html" target="self"> Get In Touch</a>
-        </nav>
-        <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
-            <i class="fas fa-bars"></i>
-        </a>
-    </header>
-
     <main class="about">
+        <div id="header-container"></div>
+        
         <section class="intro">
             <h1>  About Us | <br> Global Champions Ministries</h1>
 
@@ -82,12 +67,12 @@
                 <button class="btn prev" onclick="moveSlide(-1)">❮</button>
                 <button class="btn next" onclick="moveSlide(1)">❯</button>
             </div>
-            <hr>
         </section>         
     </main>
-    <footer id="footer"></footer>
+    <footer id="footer-container"></footer>
+    <script src="JavaScript/components.js"></script>
     <script src="JavaScript/nav.js"></script>
     <script src="JavaScript/aboutusslider.js"></script>
-    <script src="JavaScript/footer.js"></script>
+    
 </body>
 </html>

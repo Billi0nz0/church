@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="auth.css">
+
+    <title>Account | GCM</title>
+</head>
+<body>
+
+    <main class="auth-page">
+
+        <div class="auth-container">
+
+            <div class="auth-header">
+                <h1>Welcome</h1>
+                <p>
+                    Sign in to your account or create a new one.
+                </p>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="showForm('signin')">
+                    Sign In
+                </button>
+
+                <button class="tab-btn" onclick="showForm('signup')">
+                    Sign Up
+                </button>
+            </div>
+
+            <!-- SIGN IN -->
+            <form id="signin-form" class="auth-form">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter your password">
+
+                <button type="submit" class="auth-btn">
+                    Sign In
+                </button>
+
+            </form>
+
+            <!-- SIGN UP -->
+            <form id="signup-form" class="auth-form hidden">
+
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name">
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Password</label>
+                <input type="password" placeholder="Create a password">
+
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm password">
+
+                <button type="submit" class="auth-btn">
+                    Create Account
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <script src="../JavaScript/signInSwitch.js"></script>
+
+</body>
+</html>

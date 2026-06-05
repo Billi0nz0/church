@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"  href="./Images/logo.svg">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
+    <link rel="stylesheet" href="./Css/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Blog | GCM</title>
+</head>
+
+<body>
+    <div id="header-container"></div>
+
+    <section class="blog-header">
+        <h1>Our Blog</h1>
+        <p>Insights, teachings, updates, and inspiration</p>
+    </section>
+
+    <main class="blog-grid">
+
+        <article class="blog-card" onclick="openPost(1)">
+            <h2>Walking in Purpose</h2>
+            <p>Discover how to align your life with God’s calling...</p>
+            <span>Read More</span>
+        </article>
+
+        <article class="blog-card" onclick="openPost(2)">
+            <h2>Faith in Difficult Seasons</h2>
+            <p>How to stay strong when life gets overwhelming...</p>
+            <span>Read More</span>
+        </article>
+
+        <article class="blog-card" onclick="openPost(3)">
+            <h2>The Power of Prayer</h2>
+            <p>Understanding prayer as a lifestyle of connection...</p>
+            <span>Read More</span>
+        </article>
+
+    </main>
+
+    <div id="footer-container"></div>
+
+    <!-- POPUP MODAL -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+
+            <button class="close-btn" onclick="closePost()">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div id="popup-body" class="popup-body"></div>
+
+        </div>
+    </div>
+
+    
+
+    <script src="JavaScript/components.js"></script>
+    <script src="./JavaScript/blog.js"></script>    
+</body>
+</html>

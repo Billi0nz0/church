@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/index.css">
-    <link rel="stylesheet" href="Css/footer.css">
+    <link rel="stylesheet" href="components/header.css">
+    <link rel="stylesheet" href="components/footer.css">
     <link rel="icon"  href="./Images/logo.svg">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
@@ -14,31 +15,7 @@
 </head>
 
 <body>
-    <header class="main-header">
-            <div class="logo">
-                <a href="index.html" claxxss="logo">
-                    <img src="Images/logo.svg" alt="Global Champions Ministries Logo">
-                </a>
-
-                <p>
-                    GLOBAL <br>
-                    CHAMPIONS <br>
-                    MINISTRIES
-                </p>
-            </div>
-
-            <nav id="myLinks" class="navLinks">
-                <a href="about.html" target="_self"> About</a>
-                <a href="events.html" target="_self"> Events </a>
-                <a href="donate.html" target="_self"> Give </a>
-                <a id="CTO" href="contact.html" target="_self"> Get In Touch</a>
-            </nav>
-
-            <a href="javascript:void(0);" class="icon" onclick="toggleNav()" id="menu-icon">
-                <i class="fas fa-bars"></i>
-            </a>
-        </div>
-    </header>
+    <div id="header-container"></div>
 
     <main>
         <section class="hero">
@@ -59,49 +36,62 @@
 
         <section class="tabs">
 
-            <div class="tab1">
-                <img src="Images/ICONS/BIB ICON.png" alt="bible-icon" />
-                <h1>
-                    Weekly
-                    Programs
-                </h1>
+            <div class="card featured-card">
+                <div class="icon-box">
+                    <img src="Images/ICONS/BIB ICON.png" alt="Bible Icon">
+                </div>
+
+                <h2>Weekly Programs</h2>
+
                 <p>
-                    Don't miss our weekly service,
-                    a time of worship, fellowship,
-                    and life-changing encounters
-                    with Jesus.
+                    Join us every week for powerful worship,
+                    inspiring messages, prayer, and fellowship
+                    that strengthens your walk with Christ.
                 </p>
-                <a href="events.html" target="_self">See More</a>
-            </div>
-            
-            <div class="boxes">
 
-                <div class="tab2">
-                    <img src="Images/ICONS/dONATE ICON.png" alt="hand in box" />
-                    <h1>
-                        Donate
-                    </h1>
+                <a href="events.html" class="btn-primary">
+                    Explore Programs
+                </a>
+            </div>
+
+            <div class="card-grid">
+
+                <div class="card">
+                    <div class="icon-box">
+                        <img src="Images/ICONS/dONATE ICON.png" alt="Donate Icon">
+                    </div>
+
+                    <h2>Give & Donate</h2>
+
                     <p>
-                        "God loves a cheerful giver."
-                        - 2 corinthians 9:7.
+                        Support the ministry and help spread
+                        the Gospel through your generous giving.
                     </p>
-                    <a href="donate.html" target="_self">Donate</a>
+
+                    <a href="donate.html" class="btn-primary">
+                        Donate Now
+                    </a>
                 </div>
 
-                <div class="tab3">
-                    <img src="Images/ICONS/VIDEO ICON.png" alt="video icon" />
-                    <h1>
-                        Join Us Live
-                    </h1>
+                <div class="card">
+                    <div class="icon-box">
+                        <img src="Images/ICONS/VIDEO ICON.png" alt="Live Service Icon">
+                    </div>
+
+                    <h2>Join Us Live</h2>
+
                     <p>
-                        Can't be here in person?
-                        Connect with us live and
-                        encounter the Word and worship.
+                        Worship with us from anywhere in the world
+                        through our live services and online broadcasts.
                     </p>
-                    <a href="https://web.facebook.com/globalchampionsministries" target="_self">Join Now</a>
+
+                    <a href="https://web.facebook.com/globalchampionsministries" target="_blank" class="btn-primary">
+                        Watch Live
+                    </a>
                 </div>
 
             </div>
+
         </section>
         
         <section class="placeholder">
@@ -128,59 +118,83 @@
             
         </section>
 
-      
         
-        <section class="info">
-            <h1>
-                Statement of Faith
-            </h1>
+        <section class="statement">
 
-            <p> 
-                Our hope is in Christ alone, the Savior who gives life, peace, and eternal redemption.
-                His truth is revealed through God’s Word, which guides our faith, shapes our character,
-                and lights our path each day.
-            </p>
-            <section class="content">
-                <div class="info1">
-                    <img src="Images/ICONS/TRINITY ICON.png" alt="trinity-icon">
+            <div class="statementHeader">
+                <span>OUR BELIEFS</span>
+
+                <h1>Statement of Faith</h1>
+
+                <p>
+                    Our hope is found in Jesus Christ alone, the Savior who gives
+                    life, peace, and eternal redemption. Through God's Word we are
+                    guided, strengthened, and transformed to live according to His will.
+                </p>
+            </div>
+
+            <div class="statementCards">
+
+                <div class="faithCard">
+                    <div class="iconWrapper">
+                        <img src="Images/ICONS/TRINITY ICON.png" alt="Trinity Icon">
+                    </div>
+
+                    <h3>The Trinity</h3>
+
                     <p>
-                        We believe in one God
-                        Father, Son and Holy-Spirit.
+                        We believe in one God eternally existing as Father,
+                        Son, and Holy Spirit.
                     </p>
                 </div>
 
-                <div class="info2">
-                    <img src="Images/ICONS/DOVE ICON.png" alt="dove-icon">
+                <div class="faithCard">
+                    <div class="iconWrapper">
+                        <img src="Images/ICONS/DOVE ICON.png" alt="Dove Icon">
+                    </div>
+
+                    <h3>Holy Spirit</h3>
+
                     <p>
-                        We believe in the power of the
-                        Holy Spirit to transform lives,
-                        guide us in truth, and equip us
-                        for every good work.
+                        We believe in the power of the Holy Spirit to
+                        transform lives, guide believers in truth,
+                        and empower God's people.
                     </p>
                 </div>
-                <div class="info3">
-                    <img src="Images/ICONS/CROSS ICON.png" alt="cross-icon">
+
+                <div class="faithCard">
+                    <div class="iconWrapper">
+                        <img src="Images/ICONS/CROSS ICON.png" alt="Cross Icon">
+                    </div>
+
+                    <h3>Salvation</h3>
+
                     <p>
-                        We believe that salvation
-                        comes through Jesus Christ,
-                        who died and rose again for
-                        our redemption. 
+                        We believe salvation comes through Jesus Christ,
+                        whose death and resurrection secured our redemption.
                     </p>
                 </div>
-                <div class="info4">
-                    <img src="Images/ICONS/BIBLE ICON.png" alt="Bible with a cross">
+
+                <div class="faithCard">
+                    <div class="iconWrapper">
+                        <img src="Images/ICONS/BIBLE ICON.png" alt="Bible Icon">
+                    </div>
+
+                    <h3>God's Word</h3>
+
                     <p>
-                        We believe in the living Word of
-                        God as the foundation of our
-                        faith.
+                        We believe the Holy Bible is God's inspired Word
+                        and the foundation of our faith and practice.
                     </p>
                 </div>
-            </section>
+
+            </div>
+
         </section>
-        <hr>
     </main>
-    <footer id="footer"></footer>
-    <script src="JavaScript/footer.js"></script>
+
+    <div id="footer-container"></div>
+    <script src="JavaScript/components.js"></script>
     <script src="JavaScript/nav.js"></script>
 </body>
 </html>
