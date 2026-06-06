@@ -85,10 +85,6 @@
     transition: color 0.3s ease;
 }
 
-.main-header .icon i:hover {
-    color: #cc4e00;
-}
-
 .signin i {
     color: #000;
     font-size: 18px;
