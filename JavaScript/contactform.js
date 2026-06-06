@@ -14,10 +14,10 @@
     statusMessage.style.display = "none";
 
     // 1. Send the main message
-    emailjs.sendForm("service_jdyds9v", "template_mq5thcl", form)
+    emailjs.sendForm("process.env.SERVICE_ID", "process.env.TEMPLATE_ID", form)
       .then(() => {
         // 2. Send auto-reply to user
-        return emailjs.sendForm("service_jdyds9v", "template_t5ie0rl", form);
+        return emailjs.sendForm("process.env.SERVICE_ID", "process.env.AUTO_REPLY_TEMPLATE_ID", form);
       })
       .then(() => {
         // Success
