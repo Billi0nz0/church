@@ -1,0 +1,175 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Lato',sans-serif;
+}
+
+body {
+    min-height:100vh;
+    background:#fff;
+    overflow-x:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* Background Glow */
+body::before {
+    content:"";
+    position:fixed;
+    inset:0;
+    z-index:-1;
+
+    background-image:
+    radial-gradient(
+        125% 125% at 50% 90%,
+        #ffffff 40%,
+        #7c3aed 100%
+    );
+}
+
+
+.profile-card{
+    width:100%;
+    max-width:950px;
+    margin-top: 80px;
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+
+    border:1px solid rgba(255,255,255,0.25);
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:
+    0 8px 32px rgba(31,38,135,0.15),
+    inset 0 1px 1px rgba(255,255,255,0.25);
+}
+
+/* Header */
+.profile-header{
+    display:flex;
+    gap:40px;
+    align-items:center;
+}
+
+/* Profile Image */
+.profile-image{
+    flex-shrink:0;
+}
+
+.profile-image img{
+    width:220px;
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:5px solid rgba(255,255,255,0.4);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Info */
+.profile-info{
+    flex:1;
+}
+
+.profile-info h1{
+    font-size:2.5rem;
+    color:#111;
+    margin-bottom:10px;
+}
+
+.title{
+    font-size:1.1rem;
+    color:#7c3aed;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+/* Socials */
+.social-links{
+    display:flex;
+    gap:15px;
+}
+
+.social-links a{
+    width:50px;
+    height:50px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-decoration:none;
+
+    border-radius:50%;
+
+    background:
+    rgba(255,255,255,0.25);
+
+    color:#111;
+
+    transition:.3s ease;
+}
+
+.social-links a:hover{
+    background:#7c3aed;
+    color:#fff;
+    transform:translateY(-5px);
+}
+
+/* Biography */
+.bio-section{
+    margin-top:50px;
+}
+
+.bio-section h2{
+    display:flex;
+    align-items:center;
+    gap:10px;
+
+    margin-bottom:20px;
+
+    color:#111;
+}
+
+.bio-section p{
+    color:#444;
+    line-height:2;
+    font-size:1rem;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+    .profile-card{
+        padding:25px;
+    }
+
+    .profile-header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .profile-image img{
+        width:180px;
+        height:180px;
+    }
+
+    .profile-info h1{
+        font-size:2rem;
+    }
+
+    .social-links{
+        justify-content:center;
+    }
+}
