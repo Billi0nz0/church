@@ -42,6 +42,12 @@
     z-index: 999;
 }
 
+.navLinks img {
+    width: 30px;
+    height: auto;
+    display: none; /* Hide logo in desktop view */
+}
+
 .navLinks a {
     text-decoration: none;
     color: #000000;
@@ -51,6 +57,13 @@
 
 .navLinks a:hover {
     color: #cc4e00;
+}
+
+.navLinks a i {
+    display: none;
+    font-size: 16px;
+    margin-right: 6px;
+    color: #000;
 }
 
 #CTO i {
@@ -112,6 +125,15 @@
         padding: 30px;
         border-radius: 0 0 20px 0;
         transition: left 0.3s ease-in-out;
+    }
+
+    .navLinks img {
+        display: block; /* Show logo in mobile view */
+        margin-bottom: 20px;
+    }
+
+    .navLinks a i {
+        display: inline-block;
     }
 
     .navLinks a {
