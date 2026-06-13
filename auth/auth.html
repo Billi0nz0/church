@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-
+    <link rel="icon"  href="./Images/logo.svg">
     <link rel="stylesheet" href="auth.css">
-
+    <link rel="stylesheet" href="../Css/toast.css">
     <title>Account | GCM</title>
 </head>
 <body>
@@ -28,13 +27,13 @@
                     Sign In
                 </button>
 
-                <button class="tab-btn" onclick="showForm('signup')">
+                <button class="tab-btn" id="SignUp-tab-btn" onclick="showForm('signup')">
                     Sign Up
                 </button>
             </div>
 
             <!-- SIGN IN -->
-            <form id="signin-form" class="auth-form">
+            <form id="signin-form" class="auth-form" onsubmit="event.preventDefault();">
 
                 <label>Email Address</label>
                 <input type="email" placeholder="Enter your email">
@@ -52,16 +51,19 @@
             <form id="signup-form" class="auth-form hidden">
 
                 <label>Full Name</label>
-                <input type="text" placeholder="Enter your full name">
+                <input type="text" name="fullName" placeholder="Enter your full name">
+
+                <label>Username</label>
+                <input type="text" name="username" placeholder="Enter your username">
 
                 <label>Email Address</label>
-                <input type="email" placeholder="Enter your email">
+                <input type="email" name="email" placeholder="Enter your email">
 
                 <label>Password</label>
-                <input type="password" placeholder="Create a password">
+                <input type="password" name="password" placeholder="Create a password">
 
                 <label>Confirm Password</label>
-                <input type="password" placeholder="Confirm password">
+                <input type="password" name="confirmPassword" placeholder="Confirm password">
 
                 <button type="submit" class="auth-btn">
                     Create Account
@@ -73,7 +75,10 @@
 
     </main>
 
-    <script src="../JavaScript/signInSwitch.js"></script>
-
+    <div id="toast"></div>
+    <script src="/./middlewares/toast.js"></script>
+    <script src='../middlewares/signInSwitch.js'></script>
+    <script src="../middlewares/auth.js"></script>
+    
 </body>
 </html>

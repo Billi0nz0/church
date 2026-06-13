@@ -6,7 +6,7 @@
 
 body {
     min-height: 100vh;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
     background: radial-gradient(
         125% 125% at 50% 90%,
@@ -87,6 +87,7 @@ body {
     border-radius: 10px;
     margin-bottom: 18px;
     font-size: 0.85rem;
+    font-family: "Lato", sans-serif;
 }
 
 .auth-form input:focus {
