@@ -16,20 +16,19 @@
 </head>
 
 <body>
+
     
     <main class="events">
         <div id="header-container"></div>
 
         <section class="events-header">
-            <h1>Upcoming Events</h1>
-            <p>Join us as we worship, pray, and grow together in Christ.</p>
+            <h1>Recurring Events</h1>
+            <p>Join us regularly to worship, pray, and grow together in Christ.</p>
         </section>
 
         <section class="events-grid">
-
-            <!-- Event 1 -->
             <div class="event-card">
-                <img src="/Images/battlecry.jpg" alt="Midnight Battle Cry">
+                <img src="https://i.ibb.co/DfVc1JXL/Whats-App-Image-2026-06-11-at-1-19-28-PM-1.jpg" alt="Midnight Battle Cry">
 
                 <div class="event-content">
                     <div class="meta">
@@ -63,7 +62,7 @@
                         Grow deeper in God’s Word through fellowship and study.
                     </p>
 
-                    <a href="#" class="btn">Join Us</a>
+                    <a href="https://www.google.com/maps/place/7+Osinaike+Oluwawemimo+St" class="btn">Join Us</a>
                 </div>
             </div>
 
@@ -82,51 +81,24 @@
                         Worship, word, and fellowship in God’s presence.
                     </p>
 
-                    <a href="#" class="btn">Join Us</a>
+                    <a href="https://www.google.com/maps/place/7+Osinaike+Oluwawemimo+St" class="btn">Join Us</a>
                 </div>
             </div>
-
-            <!-- Event 4 -->
-            <div class="event-card">
-                <img src="/Images/w3.jpg" alt="Breaking Invisible Barriers">
-
-                <div class="event-content">
-                    <div class="meta">
-                        <span><i class="fas fa-calendar-alt"></i> Sept 7 - Sept 21, 2025</span>
-                        <span><i class="fas fa-clock"></i> Mon–Fri 6PM, Sun 7AM</span>
-                    </div>
-
-                    <h2>Breaking Invisible Barriers</h2>
-
-                    <p>
-                        A season of breaking limitations through prayer and faith in Christ.
-                    </p>
-
-                    <a href="#" class="btn">Join Us</a>
-                </div>
-            </div>
-
-            <!-- Event 5 -->
-            <div class="event-card">
-                <img src="/Images/Convention.jpg" alt="Men's Convention">
-
-                <div class="event-content">
-                    <div class="meta">
-                        <span><i class="fas fa-calendar-alt"></i> Sept 28, 2025</span>
-                        <span><i class="fas fa-clock"></i> 10:00 AM</span>
-                    </div>
-
-                    <h2>Men’s Convention 2025</h2>
-
-                    <p>
-                        Empowering men to lead in faith, purpose, and leadership.
-                    </p>
-
-                    <a href="#" class="btn">Join Us</a>
-                </div>
-            </div>
-
         </section>
+        
+        <section class="events-header">
+            <h1>Upcoming Events</h1>
+            <p>Join us as we worship, pray, and grow together in Christ.</p>
+        </section>
+
+        <section class="events-grid" id="upcomingEvents"></section>
+
+        <section class="events-header">
+            <h1>Past Events</h1>
+            <p>Moments we’ve shared in God’s presence.</p>
+        </section>
+
+        <section class="events-grid" id="pastEvents"></section>
 
         <!-- Footer Section -->
         <section class="events-footer">
@@ -135,7 +107,9 @@
 
     </main>
     <footer id="footer-container"></footer>
-    <script src="JavaScript/nav.js"></script>
-    <script src="JavaScript/components.js"></script>
+    <script src="middlewares/components.js"></script>
+    <script src="middlewares/nav.js"></script>
+    <script src="middlewares/events.js"></script>
+    <script src="/middlewares/analytics.js"></script>
 </body>
 </html>

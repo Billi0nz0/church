@@ -1,78 +1,266 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Css/about.css">
+    <title>About Us | Global Champions Ministries</title>
+    <meta name="description" content="Global Champions Ministries is a Christ-centered church raising champions through faith, discipleship, worship, and global impact.">
+    <meta name="keywords" content="church Nigeria, christian ministry, Global Champions Ministries, faith church, gospel outreach">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="icon"  href="./Images/logo.svg">
     <link rel="stylesheet" href="components/header.css">
     <link rel="stylesheet" href="components/footer.css">
-    <link rel="icon"  href="./Images/logo.svg">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta charset="description" content="Learn about Global Champions Ministries, our history, mission, and dedicated leaders committed to empowering individuals and transforming communities through faith.">
-    <meta name="keywords" content="Global Champions Ministries, About Us, Church History, Mission Statement, Church Leaders, Faith Community, Christian Ministry, Empowerment, Community Outreach">
-    <meta name="author" content="Global Champions Ministries">
-    <title>About | GCM</title>
+    <link rel="stylesheet" href="Css/about.css">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Church",
+        "name": "Global Champions Ministries",
+        "foundingDate": "2015",
+        "description": "A Christ-centered ministry raising champions through faith, worship, and discipleship.",
+        "faith": "Christian",
+        "address": {
+            "@type": " ",
+            "addressCountry": "Nigeria"
+        }
+    }
+    </script>
+
 </head>
 
 <body>
-    <main class="about">
-        <div id="header-container"></div>
-        
-        <section class="intro">
-            <h1>  About Us | <br> Global Champions Ministries</h1>
 
-            <div class="aboutImg">
-                <img src="Images/Apostle.jpeg" alt="church">
+    <div id="header-container"></div>
+
+    <main class="about-page">
+
+        <!-- HERO -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1>Global Champions Ministries</h1>
+                <p>
+                    Raising Champions for Christ. Transforming Lives. Impacting Nations.
+                </p>
+                <div class="hero-cta">
+
+                    <a href="watchlive.html" class="sermon-btn">
+                        <i class="fa-solid fa-play"></i>
+                        Watch Sermons
+                    </a>
+
+                </div>
             </div>
         </section>
 
-        <div class="history">
-            <h1> Our History </h1>
-            <p>
-                Global Champions Ministries was founded in May 2015 by Apostle Ifeanyi Ugochi with a divine mandate to raise champions for 
-                Christ and impact lives through the power of the gospel. Since its inception, the ministry has been committed to spreading 
-                the message of faith, hope, and transformation across communities. What began as a vision has grown into a vibrant fellowship 
-                where believers are equipped, empowered, and inspired to fulfill their God-given destinies.
-            </p>
-        </div>
-        
-        <div class="mission">
-            <h1> Our Mission </h1>
+        <!-- SNAPSHOT (ENTERPRISE FEATURE) -->
+        <section class="snapshot">
 
-            <P>
-                Global Champions Ministries is a faith-based movement dedicated to raising champions for Christ.
-                Our mission is to empower individuals to live victorious lives, grow in faith, and impact their world with love and integrity.
-                We believe every person has a God-given destiny, and through worship, teaching, mentorship, and outreach,
-                we equip believers to walk in purpose and transform communities. At Global
-                Champions Ministries, we are more than a church—we are a family of champions,
-                united in hope, committed to service, and passionate about changing the world for Christ.
-            </P>
-        </div>
-        
-
-        <section class="leaders">
-            <h1 class="leadtitle">Meet Our Leaders</h1>
-            <p> At Global Champions Ministries, we are blessed with dedicated leaders who serve with vision, integrity, and compassion. 
-                Each leader is committed to guiding others in faith, empowering lives, and building a community centered on Christ’s love.
-            </p>
-
-            <div class="slider">
-                <div class="slides" id="slides">
-                    <img src="Images/Apostle.jpeg" alt="">
-                    <img src="Images/papa.jpeg" alt="">
-                </div>
-                <button class="btn prev" onclick="moveSlide(-1)">❮</button>
-                <button class="btn next" onclick="moveSlide(1)">❯</button>
+            <div class="snapshot-card">
+                <i class="fa-solid fa-calendar-check"></i>
+                <h2>Founded</h2>
+                <p>2015</p>
             </div>
-        </section>         
+
+            <div class="snapshot-card">
+                <i class="fa-solid fa-earth-africa"></i>
+                <h2>Mission</h2>
+                <p>Global Impact</p>
+            </div>
+
+            <div class="snapshot-card">
+                <i class="fa-solid fa-book-bible"></i>
+                <h2>Focus</h2>
+                <p>Discipleship</p>
+            </div>
+
+            <div class="snapshot-card">
+                <i class="fa-solid fa-star"></i>
+                <h2>Vision</h2>
+                <p>Champions in Christ</p>
+            </div>
+
+        </section>
+
+        <!-- WHO WE ARE -->
+        <section class="section about-section premium-about">
+
+            <div class="about-content">
+                <span class="about-tag">About Us</span>
+
+                <h2>
+                    Who We Are
+                </h2>
+
+                <p class="lead">
+                    Global Champions Ministries is a Christ-centered movement raising believers who live with purpose, power, and spiritual excellence.
+                </p>
+
+                <p>
+                    We exist to transform lives through teaching, worship, discipleship, and outreach, building a generation grounded in faith and impact.
+                </p>
+
+                <div class="about-stats">
+                    <div>
+                        <h3>Faith</h3>
+                        <p>Rooted in Christ</p>
+                    </div>
+
+                    <div>
+                        <h3>Purpose</h3>
+                        <p>Kingdom Living</p>
+                    </div>
+
+                    <div>
+                        <h3>Impact</h3>
+                        <p>Global Reach</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="church-gallery">
+                <img class="main-photo" src="https://i.ibb.co/20D1JQrG/lv-0-20260608123808-jpg.jpg" alt="Church Service">
+
+                <img src="https://i.ibb.co/0RHcxwnh/lv-0-20260608124418-jpg.jpg" alt="Worship Session">
+
+                <img src="https://i.ibb.co/B28k5ntm/a5c8bbc0-0ed1-477f-b802-fa8b997f264c-20260608-125229-0000-jpg.jpg" alt="Prayer Meeting">
+            </div>
+
+        </section>
+
+        <!-- MINISTRIES -->
+        <section class="ministry-section">
+
+            <h2>Ministries</h2>
+
+            <p>
+                We are a Christ-centered community built around diverse ministries that nurture spiritual growth, leadership development, and kingdom impact across all age groups.
+            </p>
+
+            <div class="ministries">
+
+                <div class="ministry-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" alt="Youth Ministry">
+                    <h3>Adult Ministry</h3>
+                </div>
+
+                <div class="ministry-card">
+                    <img loading="lazy" src="https://i.ibb.co/nNH8JKhR/Whats-App-Image-2026-06-13-at-7-59-39-PM.jpg" alt="Worship">
+                    <h3>Young Adult Ministry</h3>
+                </div>
+
+                <div class="ministry-card">
+                    <img loading="lazy" src="https://i.ibb.co/vCCTM5y5/Whats-App-Image-2026-06-11-at-7-23-23-PM.jpg" alt="Prayer">
+                    <h3>Children Ministry</h3>
+                </div>
+
+                <div class="ministry-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1520975928313-1f7a5f3b8a5b" alt="Outreach">
+                    <h3>Prayer Ministry</h3>
+                </div>
+
+                <div class="ministry-card">
+                    <img loading="lazy" src="https://images.unsplash.com/photo-1520975958225-4f7b9b3d7c2a" alt="Leadership">
+                    <h3>Leadership Training</h3>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- IMPACT -->
+        <section class="impact">
+
+            <div class="impact-card">
+                <i class="fa-solid fa-calendar-days"></i>
+                <h3>12+</h3>
+                <p>Years of Ministry</p>
+            </div>
+
+            <div class="impact-card">
+                <i class="fa-solid fa-people-group"></i>
+                <h3>500+</h3>
+                <p>Lives Transformed</p>
+            </div>
+
+            <div class="impact-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>50+</h3>
+                <p>Outreach Programs</p>
+            </div>
+
+        </section>
+
+        <!-- LEADERS -->
+        <section class="section leadership-section">
+
+            <h2>Leadership</h2>
+
+            <p class="leadership-intro">
+                Meet the dedicated servants leading Global Champions Ministries with vision, integrity, and compassion.
+            </p>
+
+            <div class="leader-slider">
+
+                <div class="leader-card">
+                    <img src="Images/Apostle.jpeg" alt="Senior Pastor">
+                    <div class="leader-info">
+                        <h3>Apostle Ifeanyi Ugochi</h3>
+                        <p>G.O/Senior Pastor</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="https://i.ibb.co/tNhCnpB/Whats-App-Image-2026-06-11-at-8-49-38-PM.jpg" alt="Assistant Pastor">
+                    <div class="leader-info">
+                        <h3>Pastor Mrs Sandra Ugochi </h3>
+                        <p>Assistant Pastor</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="https://i.ibb.co/tM7Hcp0g/Whats-App-Image-2026-06-13-at-7-32-48-PM.jpg" alt="Assistant Pastor">
+                    <div class="leader-info">
+                        <h3>Pastor Kelvin Macaulay</h3>
+                        <p>Assistant Pastor</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="https://i.ibb.co/PzspPfQm/defaultphoto.png" alt="Assistant Pastor">
+                    <div class="leader-info">
+                        <h3>Pastor John Doe</h3>
+                        <p>Assistant Pastor</p>
+                    </div>
+                </div>
+
+                <div class="leader-card">
+                    <img src="https://i.ibb.co/PzspPfQm/defaultphoto.png" alt="Assistant Pastor">
+                    <div class="leader-info">
+                        <h3>Pastor John Doe</h3>
+                        <p>Assistant Pastor</p>
+                    </div>
+                </div>
+
+                <!-- Add more leaders easily -->
+            </div>
+
+        </section>
+
+        <!-- CTA -->
+        <section class="cta">
+            <h2>Become Part of the Movement</h2>
+            <p>Join a community of believers growing in purpose and faith.</p>
+            <button>Get Involved</button>
+        </section>
+
     </main>
-    <footer id="footer-container"></footer>
-    <script src="JavaScript/components.js"></script>
-    <script src="JavaScript/nav.js"></script>
-    <script src="JavaScript/aboutusslider.js"></script>
-    
+
+    <div id="footer-container"></div>
+
+    <script src="middlewares/components.js"></script>
+    <script src="middlewares/nav.js"></script>
+    <script src="/middlewares/analytics.js"></script>
 </body>
 </html>
