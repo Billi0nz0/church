@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/pages/users.css">
+<link rel="stylesheet" href="/Css/toast.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<title>Users Admin</title>
+</head>
+
+<body>
+
+    <section class="userManagement">
+
+        <div class="userHeader">
+            <h1>User Management</h1>
+            <p>Manage users, roles and access</p>
+        </div>
+
+        
+
+        <div class="userStats">
+
+            <div class="statCard">
+                <h3>Total Users</h3>
+                <span id="totalUsers">0</span>
+            </div>
+
+            <div class="statCard">
+                <h3>Banned</h3>
+                <span id="bannedUsers">0</span>
+            </div>
+
+            <div class="statCard">
+                <h3>Active</h3>
+                <span id="activeUsers">0</span>
+            </div>
+
+            <a href="/auth/auth.html" class="statCard" target="_self" title="Add User"> <i class="fab fa-plus"></i> </a>
+
+        </div>
+
+        <div id="usersContainer" class="usersGrid"></div>
+
+    </section>
+
+</body>
+</html>

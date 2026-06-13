@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/pages/myProfile.css">
+<link rel="stylesheet" href="/Css/toast.css">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<title> Profile </title>
+</head>
+
+<body>
+
+    <section class="profileManagement">
+
+    <div class="profileHeader">
+        <h1>My Profile</h1>
+        <p>Manage your account information</p>
+    </div>
+
+    <div class="profileCard">
+
+        <div class="profileTop">
+
+            <img
+                id="profilePhoto"
+                src="/images/default.png"
+                alt="Profile Photo"
+            >
+
+            <div class="profileMeta">
+                <h2 id="fullName">Loading...</h2>
+                <p id="email">Loading...</p>
+
+                <span id="roleBadge">
+                    Admin
+                </span>
+            </div>
+
+        </div>
+
+        <div class="profileDetails">
+
+            <div class="detailItem">
+                <label>Username</label>
+                <span id="username">-</span>
+            </div>
+
+            <div class="detailItem">
+                <label>Role</label>
+                <span id="userRole">-</span>
+            </div>
+
+            <div class="detailItem">
+                <label>User ID</label>
+                <span id="userId">-</span>
+            </div>
+
+        </div>
+
+        <div class="profileActions">
+
+            <button
+                id="logoutBtn"
+                class="logoutBtn"
+            >
+                Logout
+            </button>
+
+            <button
+                id="deleteBtn"
+                class="deleteBtn"
+            >
+                Delete Profile
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+</body>
+</html>

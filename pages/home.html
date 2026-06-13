@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="home.css">
+<link rel="stylesheet" href="/Css/toast.css">
+<link rel="icon"  href="./Images/logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<title>Home</title>
+</head>
+
+<body>
+
+<div class="bg"> </div>
+
+<main class="dashboard">
+
+    <section class="hero-card">
+        <img src="Images/defaultphoto.png" id="userPhoto" alt="userPhoto" className="profilePhoto" />
+        <div class="hero-text">
+            <h1 id="greeting">Hello 👋</h1>
+            <p id="subtext">Welcome back to your dashboard</p>
+        </div>
+    </section>
+
+    <section class="stats">
+
+        <div class="card">
+                <h2>Users</h2>
+                <p id="userCount">0</p>
+        </div>
+
+        <div class="card">
+                <h2>Blogs</h2>
+                <p id="blogCount">0</p>
+        </div>
+
+        <div class="card">
+                <h2>Events</h2>
+                <p id="eventCount">0</p>
+        </div>
+
+    </section>
+
+    <section class="activity">
+        <h2>Recent Activity</h2>
+
+        <div class="activity-list" id="activityList">
+            <!-- dynamic items -->
+        </div>
+    </section>
+
+    <section class="insights">
+        <div class="insight-card">
+            <h3>New Users Today</h3>
+            <p id="todayUsers">0</p>
+        </div>
+
+        <div class="insight-card">
+            <h3>Posts This Week</h3>
+            <p id="weeklyBlogs">0</p>
+        </div>
+
+        <div class="insight-card">
+            <h3>Upcoming Events</h3>
+            <p id="upcomingEvents">0</p>
+        </div>
+    </section>
+
+    <section class="live-status">
+        <h2>Live Broadcast</h2>
+
+        <div id="liveStatusBox">
+            <p>Checking stream...</p>
+        </div>
+    </section>
+
+    <section class="recent-users">
+        <h2>New Members</h2>
+
+        <div id="userList"></div>
+    </section>
+
+    <section class="analytics">
+        <h2>Analytics</h2>
+        <canvas id="chart"></canvas>
+    </section>
+
+
+
+</main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>

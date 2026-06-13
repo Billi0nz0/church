@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="pages/manageBlogs.css">
+<link rel="stylesheet" href="/Css/toast.css">
+<link rel="icon" href="./Images/logo.svg">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+<title>Manage Blogs</title>
+</head>
+
+<body>
+    <section class="blogManagement">
+
+        <!-- HEADER -->
+        <div class="blogHeader">
+            <h1>Blog Management</h1>
+            <p>Create, edit and manage blogs</p>
+        </div>
+
+        <!-- STATS -->
+        <div class="blogStats">
+
+            <div class="blogStatCard">
+                <h3>Total Blogs</h3>
+                <span id="totalBlogs">0</span>
+            </div>
+
+            <div class="blogStatCard">
+                <h3>Active</h3>
+                <span id="activeBlogs">0</span>
+            </div>
+
+            <div class="blogStatCard">
+                <h3>Archived</h3>
+                <span id="archivedBlogs">0</span>
+            </div>
+
+        </div>
+
+        <!-- FORM -->
+        <div class="blogFormCard">
+
+            <h2>Create Blog</h2>
+
+            <form id="blogForm">
+
+                <input id="title" type="text" placeholder="Title" required>
+
+                <input id="imageUrl" type="text" placeholder="Image URL">
+
+                <input id="texts" type="text" placeholder="Scriptures">
+
+                <input id="description" type="text" placeholder="Short Description" required>
+
+                <textarea id="content" placeholder="Content" required></textarea>
+
+                <textarea id="prayerPoints" placeholder="Prayer Points" required></textarea>
+
+                <button type="submit">Publish Blog</button>
+
+            </form>
+
+        </div>
+
+        <!-- TABLE -->
+        <div class="blogTableCard">
+
+            <h2>All Blogs</h2>
+
+            <div class="tableWrapper">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="blogsTable"></tbody>
+
+                </table>
+                
+            </div>
+
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,279 @@
+/* =========================
+   BASE
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', system-ui, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+
+    background-image: radial-gradient(
+        125% 125% at 50% 90%,
+        #ffffff 40%,
+        #7c3aed 100%
+    );
+
+    background-size: 100% 100%;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================
+   MAIN WRAPPER
+========================= */
+.dashboard {
+    width: 92%;
+    max-width: 1150px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-bottom: 150px;
+}
+
+/* =========================
+   HERO
+========================= */
+.hero-card {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.06)
+    );
+
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 20px;
+    padding: 25px;
+
+    box-shadow:
+        0 8px 30px rgba(124, 58, 237, 0.12),
+        0 2px 10px rgba(0, 0, 0, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.hero-card img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #7c3aed;
+}
+
+.hero-card h1 {
+    font-size: 1.8rem;
+}
+
+.hero-card p {
+    color: #666;
+    margin-top: 5px;
+}
+
+/* =========================
+   STATS
+========================= */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stats .card {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.06)
+    );
+
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 20px;
+    padding: 25px;
+
+    box-shadow:
+        0 8px 30px rgba(124, 58, 237, 0.12),
+        0 2px 10px rgba(0, 0, 0, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.stats .card:hover {
+    transform: translateY(-5px);
+}
+
+.stats .card h2 {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.stats .card p {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #7c3aed;
+    margin-top: 8px;
+}
+
+/* =========================
+   SECTIONS
+========================= */
+.activity,
+.insights,
+.live-status,
+.actions,
+.recent-users,
+.analytics {
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.18),
+        rgba(255, 255, 255, 0.06)
+    );
+
+    backdrop-filter: blur(22px) saturate(180%);
+    -webkit-backdrop-filter: blur(22px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 20px;
+    padding: 25px;
+
+    box-shadow:
+        0 8px 30px rgba(124, 58, 237, 0.12),
+        0 2px 10px rgba(0, 0, 0, 0.05),
+        inset 0 1px 1px rgba(255, 255, 255, 0.25);
+
+    transition: 0.3s ease;
+}
+
+.activity h2,
+.insights h2,
+.live-status h2,
+.actions h2,
+.recent-users h2,
+.analytics h2 {
+    margin-bottom: 15px;
+}
+
+/* =========================
+   INSIGHTS GRID
+========================= */
+.insights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.insight-card {
+    background: rgba(255,255,255,0.7);
+    padding: 15px;
+    border-radius: 14px;
+}
+
+.insight-card h3 {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.insight-card p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+    margin-top: 6px;
+}
+
+/* =========================
+   LIVE BOX
+========================= */
+#liveStatusBox {
+    padding: 15px;
+    border-radius: 12px;
+    background: rgba(124,58,237,0.08);
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+.actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.actions button {
+    padding: 10px 14px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #7c3aed;
+    color: white;
+    transition: 0.2s;
+}
+
+.actions button:hover {
+    background: #5b21b6;
+}
+
+/* =========================
+   USERS LIST
+========================= */
+#userList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.7);
+}
+
+.user-item img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 900px) {
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .insights {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+    }
+}
