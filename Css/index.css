@@ -14,7 +14,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Amber Glow Background */
 body::before {
     content: "";
     position: fixed;
@@ -195,7 +194,9 @@ body::before {
 }
 
 .featured-card {
-    flex: 1.2;
+    flex: 1;
+    max-height: 700px;
+    height: 100%;
 }
 
 .card-grid {

@@ -1,0 +1,46 @@
+#toast {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 14px 18px;
+    border-radius: 14px;
+    color: #fff;
+    font-size: 14px;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
+    z-index: 99999;
+    pointer-events: none;
+
+    /* GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px 1px rgba(255, 255, 255, 0.15);
+}
+
+/* animation state */
+#toast.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* types (kept subtle, glass-friendly overlays) */
+#toast.success {
+    background: rgba(34, 197, 94, 0.18);
+    border-color: rgba(34, 197, 94, 0.35);
+}
+
+#toast.error {
+    background: rgba(222, 0, 0, 0.18);
+    border-color: rgba(239, 68, 68, 0.35);
+}
+
+#toast.info {
+    background: rgba(59, 130, 246, 0.18);
+    border-color: rgba(59, 130, 246, 0.35);
+}
