@@ -111,6 +111,15 @@
 
 /* Responsive */
 @media (max-width: 768px) {
+    .main-header {
+        height: 70px;
+    }
+
+    .main-header .logo img {
+        width: 30px;
+        height: auto;
+    }
+
     .navLinks {
         position: fixed;
         top: 0;
