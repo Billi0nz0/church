@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     let currentUser = null;
     let isSuperAdmin = false;
-    const API_URL = "http://localhost:5000";
+    const API_URL = "https://api.gcm.com";
     // ==========================
     // GET USER ON LOAD 
     // ==========================
