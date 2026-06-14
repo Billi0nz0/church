@@ -2,13 +2,36 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     const signinForm = document.getElementById("signin-form");
     const signupForm = document.getElementById("signup-form");
-    const signupTab = document.getElementById("SignUp-tab-btn")
+    const signupTab = document.getElementById("SignUp-tab-btn");
 
     let currentUser = null;
     let isSuperAdmin = false;
+
     const API_URL = "https://api.gcm.com";
+
     // ==========================
-    // GET USER ON LOAD 
+    // LOADING HELPER
+    // ==========================
+    function setLoading(buttonId, isLoading) {
+        const btn = document.getElementById(buttonId);
+        if (!btn) return;
+
+        const text = btn.querySelector(".btn-text");
+        const spinner = btn.querySelector(".spinner");
+
+        btn.disabled = isLoading;
+
+        if (spinner) {
+            spinner.classList.toggle("hidden", !isLoading);
+        }
+
+        if (text) {
+            text.style.opacity = isLoading ? "0.6" : "1";
+        }
+    }
+
+    // ==========================
+    // GET USER ON LOAD
     // ==========================
     async function loadUser() {
         try {
@@ -37,19 +60,18 @@ document.addEventListener("DOMContentLoaded", async () => {
     // ==========================
     if (!isSuperAdmin) {
         if (signupForm) signupForm.style.display = "none";
-
         if (signupTab) signupTab.style.display = "none";
 
         const msg = document.createElement("p");
         msg.textContent = "Only superadmins can create accounts.";
         msg.style.color = "red";
-        msg.style.fontSize = "0.85rem"
-        msg.style.marginTop = "10px"
-        msg.style.textAlign = "center"
+        msg.style.fontSize = "0.85rem";
+        msg.style.marginTop = "10px";
+        msg.style.textAlign = "center";
 
         document.querySelector(".auth-container")?.appendChild(msg);
     }
-   
+
     // ==========================
     // LOGIN
     // ==========================
@@ -59,6 +81,8 @@ document.addEventListener("DOMContentLoaded", async () => {
 
             const email = signinForm.querySelector("input[type='email']").value;
             const password = signinForm.querySelector("input[type='password']").value;
+
+            setLoading("signin-btn", true);
 
             try {
                 const res = await fetch(`${API_URL}/auth/login`, {
@@ -81,6 +105,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             } catch (err) {
                 console.error(err);
                 showToast("Network error", "error");
+
+            } finally {
+                setLoading("signin-btn", false);
             }
         });
     }
@@ -89,11 +116,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     // SIGNUP (PROTECTED)
     // ==========================
     if (signupForm) {
-
         signupForm.addEventListener("submit", async (e) => {
             e.preventDefault();
 
-            // extra safety check (never trust UI alone)
             if (!isSuperAdmin) {
                 showToast("Access denied: Superadmins only", "error");
                 return;
@@ -109,6 +134,8 @@ document.addEventListener("DOMContentLoaded", async () => {
                 showToast("Passwords do not match", "error");
                 return;
             }
+
+            setLoading("signup-btn", true);
 
             try {
                 const res = await fetch(`${API_URL}/auth/register`, {
@@ -136,6 +163,9 @@ document.addEventListener("DOMContentLoaded", async () => {
             } catch (err) {
                 console.error(err);
                 showToast("Network error", "error");
+
+            } finally {
+                setLoading("signup-btn", false);
             }
         });
     }
