@@ -59,8 +59,8 @@ document.addEventListener("DOMContentLoaded", async () => {
     // HIDE SIGNUP IF NOT SUPERADMIN
     // ==========================
     if (!isSuperAdmin) {
-        if (signupForm) signupForm.style.display = "";
-        if (signupTab) signupTab.style.display = "";
+        if (signupForm) signupForm.style.display = "none";
+        if (signupTab) signupTab.style.display = "none";
 
         const msg = document.createElement("p");
         msg.textContent = "Only superadmins can create accounts.";
