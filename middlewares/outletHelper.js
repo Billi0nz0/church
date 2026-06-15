@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         const greeting = document.getElementById("greeting");
         const subtext = document.getElementById("subtext");
-        const photo = document.getElementById("userPhoto");
+        const photo = document.getElementById("userProfilePhoto");
 
         const userCountEl = document.getElementById("userCount");
         const blogCountEl = document.getElementById("blogCount");
