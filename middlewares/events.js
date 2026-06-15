@@ -15,7 +15,7 @@ async function loadEvents() {
     try {
 
         const res =
-            await fetch("http://localhost:5000/events", {
+            await fetch("https://api.gcm.com.ng/events", {
                 credentials: "include"
             });
 
