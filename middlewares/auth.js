@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     let currentUser = null;
     let isSuperAdmin = false;
 
-    const API_URL = "https://api.gcm.com";
+    const API_URL = "https://api.gcm.com.ng";
 
     // ==========================
     // LOADING HELPER
