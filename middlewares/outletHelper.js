@@ -210,9 +210,9 @@ document.addEventListener("DOMContentLoaded", async () => {
         // ======================
         const hour = new Date().getHours();
 
-        let greet = "Good Evening 🌙";
-        if (hour < 12) greet = "Good Morning ☀️";
-        else if (hour < 17) greet = "Good Afternoon ☀️";
+        let greet = "Good Evening";
+        if (hour < 12) greet = "Good Morning";
+        else if (hour < 17) greet = "Good Afternoon";
 
         greeting.textContent = `${greet}, ${user?.fullName || "User"}`;
         subtext.textContent = "Welcome to your ministry dashboard overview";
