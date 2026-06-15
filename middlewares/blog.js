@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // =========================
     async function loadBlogs() {
         try {
-            const res = await fetch("http://localhost:5000/blogs", {
+            const res = await fetch("https://api.gcm.com.ng/blogs", {
                 credentials: "include"
             });
 
