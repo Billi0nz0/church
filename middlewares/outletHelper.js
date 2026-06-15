@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     
     const userContent = document.getElementById("userContent");
     const userPhoto = document.getElementById("userPhoto");
-    const API_URL = "https://api.gcm.com";
+    const API_URL = "https://api.gcm.com.ng";
 
 
     let user = null;
