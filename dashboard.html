@@ -12,67 +12,65 @@
 </head>
 <body>
 
-<section class="userLayout">
+    <section class="userLayout">
 
-    <!-- SIDEBAR -->
-    <nav class="userNav">
-        <ul class="userNavLinks">
+        <!-- SIDEBAR -->
+        <nav class="userNav">
+            <ul class="userNavLinks ">
 
-            <li>
-                <a href="#" class="navLink" data-page="users">
-                    <i class="fa fa-users icon"></i>
-                    <p>Users</p>
-                </a>
-            </li>
-            
-            <li>
-                <a href="#" class="navLink" data-page="events">
-                    <i class="fa fa-clock icon"></i>
-                    <p>Events</p>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="navLink" data-page="users">
+                        <i class="fa fa-users icon"></i>
+                        <p>Users</p>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" class="navLink" data-page="events">
+                        <i class="fa fa-clock icon"></i>
+                        <p>Events</p>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="navLink active" data-page="home">
-                    <i class="fa fa-home icon"></i>
-                    <p>Home</p>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="navLink active" data-page="home">
+                        <i class="fa fa-home icon"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="navLink" data-page="blogs">
-                    <i class="fa fa-newspaper icon"></i>
-                    <p>Blogs</p>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="navLink" data-page="blogs">
+                        <i class="fa fa-newspaper icon"></i>
+                        <p>Blogs</p>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="navLink" data-page="live">
-                    <i class="fa fa-play icon"></i>
-                    <p>Live</p>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="navLink" data-page="live">
+                        <i class="fa fa-play icon"></i>
+                        <p>Live</p>
+                    </a>
+                </li>
 
-            <li>
-                <a href="#" class="navLink" data-page="profileLink">
-                    <img id="userPhoto" />
-                    <p>You</p>
-                </a>
-            </li>
+                <li>
+                    <a href="#" class="navLink" data-page="profileLink">
+                        <img id="userPhoto" />
+                        <p>You</p>
+                    </a>
+                </li>
 
-        </ul>
-    </nav>
+            </ul>
+        </nav>
 
     <!-- CONTENT AREA (React Outlet replacement) -->
-    <section class="userContent" id="userContent">
+        <section class="userContent hidden-page" id="userContent">
 
-        <h2> <i class="fa fa-spinner fa-spin"></i> Loading...</h2>
+        </section>
 
     </section>
 
-</section>
-
-<script src="./middlewares/outletHelper.js"></script>
-<script src="/middlewares/analytics.js"></script>
+    <script src="./middlewares/outletHelper.js"></script>
+    <script src="/middlewares/analytics.js"></script>
 </body>
 </html>
