@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         else if (hour < 17) greet = "Good Afternoon";
 
         greeting.textContent = `${greet}, ${user?.fullName || "User"}`;
-        subtext.textContent = "Welcome to your ministry dashboard overview";
+        subtext.textContent = "Welcome Onboard! Here are the Latest Updates.";
 
         if (photo) {
             photo.src = user?.profilePhoto || "https://i.ibb.co/PzspPfQm/defaultphoto.png";
