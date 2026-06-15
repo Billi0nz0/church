@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+    
     const userContent = document.getElementById("userContent");
     const userPhoto = document.getElementById("userPhoto");
     const API_URL = "https://api.gcm.com.ng";
@@ -120,26 +121,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await requireAuth();
 
-    function safePageHandler(handler) {
-        return async function (...args) {
-            const page = document.getElementById("userContent");
-
-            try {
-                // Show page immediately (NO LONG LOCK)
-                if (page) {
-                    page.style.opacity = "1";
-                }
-
-                // Let skeleton handle loading, NOT opacity
-                await handler(...args);
-
-            } catch (err) {
-                console.error(err);
-
-            }
-        };
-    }
-
     // ==========================
     // PAGES
     // ==========================
@@ -151,39 +132,22 @@ document.addEventListener("DOMContentLoaded", async () => {
         live: "/pages/manageLive.html",
         profileLink: "/pages/myProfile.html"
     };
-    
 
     const pageHandlers = {
-        home: safePageHandler(initHomePage),
-        users: safePageHandler(initUsersPage),
-        events: safePageHandler(initEventsPage),
-        blogs: safePageHandler(initBlogsPage),
-        live: safePageHandler(initLivePage),
-        profileLink: safePageHandler(initProfilePage),
+        home: initHomePage,
+        users: initUsersPage,
+        events: initEventsPage,
+        blogs: initBlogsPage,
+        live: initLivePage,
+        profileLink: initProfilePage,
     };
-    
+
     // ==========================
     // LOAD PAGE
     // ==========================
     async function loadPage(page) {
 
-        const PageLoader = {
-            show() {
-                const loader = document.getElementById("pageLoader");
-                const outlet = document.getElementById("pageOutlet");
-
-                if (loader) loader.classList.remove("hidden");
-                if (outlet) outlet.classList.remove("ready");
-            },
-
-            hide() {
-                const loader = document.getElementById("pageLoader");
-                const outlet = document.getElementById("pageOutlet");
-
-                if (loader) loader.classList.add("hidden");
-                if (outlet) outlet.classList.add("ready");
-            }
-        };
+        userContent.innerHTML = `<div class="loading">Loading...</div>`;
 
         try {
             const res = await fetch(pages[page]);
@@ -390,7 +354,7 @@ document.addEventListener("DOMContentLoaded", async () => {
                             }
                         }
                     });
-                    
+
                 } catch (err) {
                     console.error("Chart load failed:", err);
                 }
@@ -1086,4 +1050,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     });
 
 });
-
