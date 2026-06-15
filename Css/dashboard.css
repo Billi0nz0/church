@@ -126,6 +126,21 @@
     margin-top: 40px;
 }
 
+.hidden-page {
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.page-ready {
+    opacity: 1;
+}
+
+.userContent {
+    position: relative;
+    min-height: 60vh;
+}
+
+
 /* MOBILE */
 @media (max-width: 768px) {
     .userNav {
