@@ -55,10 +55,6 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     await loadUser();
 
-    console.log("Current User:", currentUser);
-    console.log("Role:", currentUser?.role);
-    console.log("isSuperAdmin:", isSuperAdmin);
-
     // ==========================
     // HIDE SIGNUP IF NOT SUPERADMIN
     // ==========================
